@@ -71,3 +71,14 @@
 	greyscale_config = /datum/greyscale_config/rebellion_mask
 	greyscale_config_worn = /datum/greyscale_config/rebellion_mask/worn
 	flags_1 = IS_PLAYER_COLORABLE_1
+
+/obj/item/clothing/mask/anonmask
+	name = "anon mask"
+	desc = "One shudders to imagine what inhuman thoughts lie behind this mask...."
+	icon_state = "anonmask"
+	inhand_icon_state = null
+	flags_inv = HIDEFACE|HIDEHAIR|HIDEFACIALHAIR|HIDESNOUT
+	greyscale_colors = "#9FE285"
+	greyscale_config = /datum/greyscale_config/anonmask
+	greyscale_config_worn = /datum/greyscale_config/anonmask/worn
+	flags_1 = IS_PLAYER_COLORABLE_1

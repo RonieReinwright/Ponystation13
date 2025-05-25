@@ -187,6 +187,15 @@
 	name = "Rebellion mask (Worn)"
 	icon_file = 'icons/mob/clothing/mask.dmi'
 
+/datum/greyscale_config/anonmask
+	name = "Anon mask"
+	icon_file = 'icons/obj/clothing/masks.dmi'
+	json_config = 'code/datums/greyscale/json_configs/anonmask.json'
+
+/datum/greyscale_config/anonmask/worn
+	name = "Anon mask (Worn)"
+	icon_file = 'icons/mob/clothing/mask.dmi'
+
 //
 // NECK
 //
@@ -231,6 +240,15 @@
 	name = "Gloves (Held, Right)"
 	icon_file = 'icons/mob/inhands/clothing/gloves_righthand.dmi'
 	json_config = 'code/datums/greyscale/json_configs/gloves_inhand.json'
+
+/datum/greyscale_config/anongloves
+	name = "Anon's gloves"
+	icon_file = 'icons/obj/clothing/gloves.dmi'
+	json_config = 'code/datums/greyscale/json_configs/anongloves.json'
+
+/datum/greyscale_config/anongloves/worn
+	name = "Anon's gloves"
+	icon_file = 'icons/mob/clothing/hands.dmi'
 
 //
 // UNDER

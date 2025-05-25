@@ -48,6 +48,8 @@ GLOBAL_LIST_INIT(autodrobe_costumes_items, list(
 	/obj/item/clothing/under/costume/gi = 4,
 	/obj/item/clothing/head/soft/propeller_hat = 3,
 	/obj/item/clothing/neck/bowtie/rainbow = 3,
+	/obj/item/clothing/mask/anonmask = 5,
+	/obj/item/clothing/gloves/anongloves = 5,
 ))
 
 GLOBAL_LIST_INIT(autodrobe_supernatural_items, list(
