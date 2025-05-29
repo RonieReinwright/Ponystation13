@@ -229,8 +229,17 @@
 	armor_type = /datum/armor/utility_radiation
 	strip_delay = 60
 	equip_delay_other = 60
-	flags_inv = HIDEJUMPSUIT
+	flags_inv = HIDESHOES|HIDEJUMPSUIT
 	resistance_flags = NONE
+	supports_variations_flags = CLOTHING_PONY_MASK
+	pony_clothing_sample_pixels = null
+	pony_icon_state = "rad"
+	pony_config_path = /datum/greyscale_config/pony_clothes_override
+
+/obj/item/clothing/suit/utility/radiation/generate_pony_icons(icon/base_icon, greyscale_colors)
+	var/icon/ponysuit = icon(SSgreyscale.GetColoredIconByType(pony_config_path, greyscale_colors), pony_icon_state)
+	return ponysuit
+
 
 /obj/item/clothing/suit/utility/radiation/Initialize(mapload)
 	. = ..()

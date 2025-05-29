@@ -159,5 +159,13 @@
 			"icon_state": "chitinsuit",
 			"blend_mode": "overlay"
 		}
+	],
+	"rad": [
+		{
+			"type": "icon_state",
+			"icon_state": "rad",
+			"blend_mode": "overlay"
+		}
 	]
+
 }
