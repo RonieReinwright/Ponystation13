@@ -43,6 +43,14 @@
 	strip_delay = 70
 	equip_delay_other = 70
 	resistance_flags = ACID_PROOF
+	supports_variations_flags = CLOTHING_PONY_MASK
+	pony_clothing_sample_pixels = list(
+		list(14,21),
+		list(22,19)
+	)
+	pony_icon_state = "biosuit"
+	pony_config_path = /datum/greyscale_config/pony_clothes_2_color
+
 
 /obj/item/clothing/suit/bio_suit/Initialize(mapload)
 	. = ..()

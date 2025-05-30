@@ -43,3 +43,5 @@
 #define FOOTPRINT_SPRITE_SHOES "shoes"
 #define FOOTPRINT_SPRITE_PAWS "paws"
 #define FOOTPRINT_SPRITE_CLAWS "claws"
+#define FOOTPRINT_SPRITE_HOOVES "hooves"
+

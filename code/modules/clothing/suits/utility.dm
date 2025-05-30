@@ -229,7 +229,7 @@
 	armor_type = /datum/armor/utility_radiation
 	strip_delay = 60
 	equip_delay_other = 60
-	flags_inv = HIDESHOES|HIDEJUMPSUIT
+	flags_inv = HIDEJUMPSUIT
 	resistance_flags = NONE
 	supports_variations_flags = CLOTHING_PONY_MASK
 	pony_clothing_sample_pixels = null
