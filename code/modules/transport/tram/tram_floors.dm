@@ -14,6 +14,7 @@
 	footstep = FOOTSTEP_CATWALK
 	barefootstep = FOOTSTEP_HARD_BAREFOOT
 	clawfootstep = FOOTSTEP_HARD_CLAW
+	hooffootstep = FOOTSTEP_HARD_HOOF
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 	tiled_dirt = FALSE
 	rcd_proof = TRUE
@@ -147,6 +148,7 @@
 	footstep = FOOTSTEP_CATWALK
 	barefootstep = FOOTSTEP_HARD_BAREFOOT
 	clawfootstep = FOOTSTEP_HARD_CLAW
+	hooffootstep = FOOTSTEP_HARD_HOOF
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 
 /turf/open/indestructible/tram/attackby(obj/item/object, mob/living/user, params)

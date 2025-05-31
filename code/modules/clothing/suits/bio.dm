@@ -93,6 +93,10 @@
 /obj/item/clothing/suit/bio_suit/security
 	armor_type = /datum/armor/bio_suit_security
 	icon_state = "bio_security"
+	supports_variations_flags = CLOTHING_PONY_MASK
+	pony_clothing_sample_pixels = null
+	pony_icon_state = "bio_security"
+	pony_config_path = /datum/greyscale_config/pony_clothes_override
 
 /datum/armor/bio_suit_security
 	melee = 25

@@ -214,6 +214,7 @@
 	limb_id = SPECIES_PONY
 	bodyshape = BODYSHAPE_PONY
 	footprint_sprite = FOOTPRINT_SPRITE_HOOVES
+	footstep_type = FOOTSTEP_MOB_HOOF
 
 /obj/item/bodypart/leg/left/pony/Initialize(mapload)
 	. = ..()
@@ -229,6 +230,7 @@
 	limb_id = SPECIES_PONY
 	bodyshape = BODYSHAPE_PONY
 	footprint_sprite = FOOTPRINT_SPRITE_HOOVES
+	footstep_type = FOOTSTEP_MOB_HOOF
 
 /obj/item/bodypart/leg/right/pony/Initialize(mapload)
 	. = ..()

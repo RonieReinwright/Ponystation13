@@ -166,6 +166,14 @@
 			"icon_state": "rad",
 			"blend_mode": "overlay"
 		}
+	],
+	"bio_security": [
+		{
+			"type": "icon_state",
+			"icon_state": "bio_security",
+			"blend_mode": "overlay"
+		}
 	]
+
 
 }
