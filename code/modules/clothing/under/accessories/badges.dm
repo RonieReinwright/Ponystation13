@@ -179,18 +179,18 @@
 
 /obj/item/clothing/accessory/pride
 	name = "pride pin"
-	desc = "A Nanotrasen Diversity & Inclusion Center-sponsored holographic pin to show off your pride, reminding the crew of their unwavering commitment to equity, diversity, and inclusion!"
-	icon_state = "pride"
+	desc = "A holographic pin to show off pony pride galaxywide."
+	icon_state = "luna"
 	obj_flags = UNIQUE_RENAME | INFINITE_RESKIN
 	unique_reskin = list(
-		"Rainbow Pride" = "pride",
-		"Bisexual Pride" = "pride_bi",
-		"Pansexual Pride" = "pride_pan",
-		"Asexual Pride" = "pride_ace",
-		"Non-binary Pride" = "pride_enby",
-		"Transgender Pride" = "pride_trans",
-		"Intersex Pride" = "pride_intersex",
-		"Lesbian Pride" = "pride_lesbian",
+		"Applejack Pin" = "applejack",
+		"Fluttershy Pin" = "fluttershy",
+		"Pinkie Pin" = "pinkie",
+		"Rainbow Dash Pin" = "rainbowdash",
+		"Rarity Pin" = "rarity",
+		"Twilight Sparkle Pin" = "twilight",
+		"Celestia Pin" = "celestia",
+		"Luna Pin" = "luna",
 	)
 
 /obj/item/clothing/accessory/pride/setup_reskinning()
