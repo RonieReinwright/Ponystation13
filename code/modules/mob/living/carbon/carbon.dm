@@ -1348,7 +1348,7 @@
 
 /// Returns if the carbon is wearing shock proof gloves
 /mob/living/carbon/proc/wearing_shock_proof_gloves()
-	if (HAS_TRAIT(src, TRAIT_PONY_PREFS))
+	if (ispony(src))
 		return shoes?.siemens_coefficient == 0
 
 	return gloves?.siemens_coefficient == 0

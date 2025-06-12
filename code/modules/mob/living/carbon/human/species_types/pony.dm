@@ -27,7 +27,7 @@
 		/datum/bodypart_overlay/simple/body_marking/cutie_mark = SPRITE_ACCESSORY_NONE
 	)
 
-	payday_modifier = 0.8
+	payday_modifier = 1.0
 	changesource_flags = MIRROR_BADMIN | WABBAJACK | MIRROR_PRIDE | MIRROR_MAGIC | RACE_SWAP | ERT_SPAWN | SLIME_EXTRACT
 	no_equip_flags = ITEM_SLOT_GLOVES
 	species_cookie = /obj/item/food/grown/apple
