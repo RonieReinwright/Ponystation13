@@ -13,7 +13,6 @@
 	footstep = FOOTSTEP_SAND
 	barefootstep = FOOTSTEP_SAND
 	clawfootstep = FOOTSTEP_SAND
-	hooffootstep = FOOTSTEP_SAND
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 	rust_resistance = RUST_RESISTANCE_ORGANIC
 	/// Base turf type to be created by the tunnel
@@ -60,7 +59,7 @@
 /turf/open/misc/asteroid/ex_act(severity, target)
 	return FALSE
 
-/turf/open/misc/asteroid/attackby(obj/item/attack_item, mob/user, params)
+/turf/open/misc/asteroid/attackby(obj/item/attack_item, mob/user, list/modifiers)
 	. = ..()
 	if(.)
 		return TRUE
@@ -257,7 +256,6 @@ GLOBAL_LIST_EMPTY(dug_up_basalt)
 	footstep = FOOTSTEP_FLOOR
 	barefootstep = FOOTSTEP_HARD_BAREFOOT
 	clawfootstep = FOOTSTEP_HARD_CLAW
-	hooffootstep = FOOTSTEP_HARD_HOOF
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 	damaged_dmi = null
 

@@ -11,7 +11,6 @@
 	icon_state = "aerostatic_gloves"
 	greyscale_colors = "#a63814"
 
-
 /obj/item/clothing/gloves/anongloves
 	name = "Anon gloves"
 	desc = "For specialised pony care."
@@ -20,4 +19,3 @@
 	greyscale_config = /datum/greyscale_config/anongloves
 	greyscale_config_worn = /datum/greyscale_config/anongloves/worn
 	flags_1 = IS_PLAYER_COLORABLE_1
-

@@ -14,7 +14,6 @@
 	footstep = FOOTSTEP_CATWALK
 	barefootstep = FOOTSTEP_HARD_BAREFOOT
 	clawfootstep = FOOTSTEP_HARD_CLAW
-	hooffootstep = FOOTSTEP_HARD_HOOF
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 	tiled_dirt = FALSE
 	rcd_proof = TRUE
@@ -23,7 +22,7 @@
 	. += ..()
 	. += span_notice("The reinforcement bolts are [EXAMINE_HINT("wrenched")] firmly in place. Use a [EXAMINE_HINT("wrench")] to remove the plate.")
 
-/turf/open/floor/tram/attackby(obj/item/object, mob/living/user, params)
+/turf/open/floor/tram/attackby(obj/item/object, mob/living/user, list/modifiers)
 	. = ..()
 	if(istype(object, /obj/item/stack/thermoplastic))
 		build_with_transport_tiles(object, user)
@@ -35,7 +34,7 @@
 		return ..()
 	return //unplateable
 
-/turf/open/floor/tram/try_replace_tile(obj/item/stack/tile/replacement_tile, mob/user, params)
+/turf/open/floor/tram/try_replace_tile(obj/item/stack/tile/replacement_tile, mob/user, list/modifiers)
 	return
 
 /turf/open/floor/tram/crowbar_act(mob/living/user, obj/item/item)
@@ -127,7 +126,7 @@
 /turf/open/floor/tram/plate/energized/burnt_states()
 	return list("energized_plate_damaged")
 
-/turf/open/floor/tram/plate/energized/attackby(obj/item/attacking_item, mob/living/user, params)
+/turf/open/floor/tram/plate/energized/attackby(obj/item/attacking_item, mob/living/user, list/modifiers)
 	if((broken || burnt) && istype(attacking_item, /obj/item/stack/sheet/mineral/titanium))
 		if(attacking_item.use(1))
 			broken = FALSE
@@ -148,10 +147,9 @@
 	footstep = FOOTSTEP_CATWALK
 	barefootstep = FOOTSTEP_HARD_BAREFOOT
 	clawfootstep = FOOTSTEP_HARD_CLAW
-	hooffootstep = FOOTSTEP_HARD_HOOF
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 
-/turf/open/indestructible/tram/attackby(obj/item/object, mob/living/user, params)
+/turf/open/indestructible/tram/attackby(obj/item/object, mob/living/user, list/modifiers)
 	. = ..()
 	if(istype(object, /obj/item/stack/thermoplastic))
 		build_with_transport_tiles(object, user)

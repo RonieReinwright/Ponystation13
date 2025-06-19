@@ -17,11 +17,6 @@
 //misc footstep sounds
 #define FOOTSTEP_GENERIC_HEAVY "heavy"
 
-//hooves
-#define FOOTSTEP_MOB_HOOF "footstep_hoof"
-#define FOOTSTEP_GRASS_HOOF "grasshoof"
-#define FOOTSTEP_HARD_HOOF "hardhoof"
-#define FOOTSTEP_WOOD_HOOF "woodhoof"
 
 //footstep mob defines
 #define FOOTSTEP_MOB_CLAW "footstep_claw"
@@ -182,56 +177,6 @@ GLOBAL_LIST_INIT(clawfootstep, list(
 		'sound/effects/footstep/grass2.ogg',
 		'sound/effects/footstep/grass3.ogg',
 		'sound/effects/footstep/grass4.ogg'), 75, 0),
-	FOOTSTEP_WATER = list(list(
-		'sound/effects/footstep/water/water1.ogg',
-		'sound/effects/footstep/water/water2.ogg',
-		'sound/effects/footstep/water/water3.ogg',
-		'sound/effects/footstep/water/water4.ogg'), 100, 1),
-	FOOTSTEP_LAVA = list(list(
-		'sound/effects/footstep/lava1.ogg',
-		'sound/effects/footstep/lava2.ogg',
-		'sound/effects/footstep/lava3.ogg'), 100, 0),
-	FOOTSTEP_MEAT = list(list(
-		'sound/effects/meatslap.ogg'), 100, 0),
-))
-
-//hoof footsteps lists
-GLOBAL_LIST_INIT(hooffootstep, list(
-	FOOTSTEP_WOOD_HOOF = list(list(
-		'sound/effects/footstep/woodhoof1.ogg',
-		'sound/effects/footstep/woodhoof2.ogg',
-		'sound/effects/footstep/woodhoof3.ogg',
-		'sound/effects/footstep/woodhoof4.ogg',
-		'sound/effects/footstep/woodhoof5.ogg'), 90, 1),
-	FOOTSTEP_HARD_HOOF = list(list(
-		'sound/effects/footstep/floorhoof1.ogg',
-		'sound/effects/footstep/floorhoof2.ogg',
-		'sound/effects/footstep/floorhoof3.ogg',
-		'sound/effects/footstep/floorhoof4.ogg',
-		'sound/effects/footstep/floorhoof5.ogg'), 75, -1),
-	FOOTSTEP_FLOOR_HOOF = list(list(
-		'sound/effects/footstep/hardhoof1.ogg',
-		'sound/effects/footstep/hardhoof2.ogg',
-		'sound/effects/footstep/hardhoof3.ogg',
-		'sound/effects/footstep/hardhoof4.ogg',
-		'sound/effects/footstep/hardhoof5.ogg'), 90, 1),
-	FOOTSTEP_CARPET_BAREFOOT = list(list(
-		'sound/effects/footstep/carpetbarefoot1.ogg',
-		'sound/effects/footstep/carpetbarefoot2.ogg',
-		'sound/effects/footstep/carpetbarefoot3.ogg',
-		'sound/effects/footstep/carpetbarefoot4.ogg',
-		'sound/effects/footstep/carpetbarefoot5.ogg'), 75, -2),
-	FOOTSTEP_SAND = list(list(
-		'sound/effects/footstep/asteroid1.ogg',
-		'sound/effects/footstep/asteroid2.ogg',
-		'sound/effects/footstep/asteroid3.ogg',
-		'sound/effects/footstep/asteroid4.ogg',
-		'sound/effects/footstep/asteroid5.ogg'), 75, 0),
-	FOOTSTEP_GRASS_HOOF = list(list(
-		'sound/effects/footstep/grasshoof1.ogg',
-		'sound/effects/footstep/grasshoof2.ogg',
-		'sound/effects/footstep/grasshoof3.ogg',
-		'sound/effects/footstep/grasshoof4.ogg'), 75, 0),
 	FOOTSTEP_WATER = list(list(
 		'sound/effects/footstep/water/water1.ogg',
 		'sound/effects/footstep/water/water2.ogg',

@@ -12,7 +12,6 @@
 	footstep = FOOTSTEP_PLATING
 	barefootstep = FOOTSTEP_HARD_BAREFOOT
 	clawfootstep = FOOTSTEP_HARD_CLAW
-	hooffootstep = FOOTSTEP_HARD_HOOF
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 	floor_tile = /obj/item/stack/tile/glass
 	/// List of /atom/movable/render_step that are being used to make this glass floor glow

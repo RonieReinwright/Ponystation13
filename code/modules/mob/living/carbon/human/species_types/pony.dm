@@ -31,7 +31,7 @@
 	changesource_flags = MIRROR_BADMIN | WABBAJACK | MIRROR_PRIDE | MIRROR_MAGIC | RACE_SWAP | ERT_SPAWN | SLIME_EXTRACT
 	no_equip_flags = ITEM_SLOT_GLOVES
 	species_cookie = /obj/item/food/grown/apple
-	inert_mutation = /datum/mutation/human/telekinesis
+	inert_mutation = /datum/mutation/telekinesis
 	species_language_holder = /datum/language_holder/pony
 
 	bodypart_overrides = list(

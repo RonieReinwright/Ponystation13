@@ -72,6 +72,8 @@
 				slowdown *= 0.5 // and having a weak immune system makes it way faster
 			if(owner.has_status_effect(/datum/status_effect/nest_sustenance))
 				slowdown *= 0.80 //egg gestates 20% faster if you're trapped in a nest
+			if(HAS_TRAIT(owner, TRAIT_IMMUNODEFICIENCY) && !HAS_TRAIT(owner, TRAIT_VIRUS_RESISTANCE))
+				slowdown *= 0.5 //terrible immune system = doubled parasite growth
 
 		addtimer(CALLBACK(src, PROC_REF(advance_embryo_stage)), growth_time*slowdown)
 

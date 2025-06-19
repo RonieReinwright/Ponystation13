@@ -21,7 +21,6 @@
 	footstep = FOOTSTEP_LAVA
 	barefootstep = FOOTSTEP_LAVA
 	clawfootstep = FOOTSTEP_LAVA
-	hooffootstep = FOOTSTEP_LAVA
 	heavyfootstep = FOOTSTEP_LAVA
 	rust_resistance = RUST_RESISTANCE_ABSOLUTE
 	/// How much fire damage we deal to living mobs stepping on us
@@ -211,7 +210,7 @@
 
 /turf/open/lava/TakeTemperature(temp)
 
-/turf/open/lava/attackby(obj/item/C, mob/user, params)
+/turf/open/lava/attackby(obj/item/C, mob/user, list/modifiers)
 	..()
 	if(istype(C, /obj/item/stack/rods/lava))
 		var/obj/item/stack/rods/lava/R = C
@@ -403,7 +402,7 @@
 	. = ..()
 	. += span_info("Some <b>liquid plasma<b> could probably be scooped up with a <b>container</b>.")
 
-/turf/open/lava/plasma/attackby(obj/item/I, mob/user, params)
+/turf/open/lava/plasma/attackby(obj/item/I, mob/user, list/modifiers)
 	if(!I.is_open_container())
 		return ..()
 	if(!I.reagents.add_reagent(/datum/reagent/toxin/plasma, rand(5, 10)))

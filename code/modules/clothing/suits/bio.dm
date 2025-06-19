@@ -51,7 +51,6 @@
 	pony_icon_state = "biosuit"
 	pony_config_path = /datum/greyscale_config/pony_clothes_2_color
 
-
 /obj/item/clothing/suit/bio_suit/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/adjust_fishing_difficulty, 6)
@@ -79,6 +78,10 @@
 /obj/item/clothing/head/bio_hood/security
 	armor_type = /datum/armor/bio_hood_security
 	icon_state = "bio_security"
+	supports_variations_flags = CLOTHING_PONY_MASK
+	pony_clothing_sample_pixels = null
+	pony_icon_state = "bio_security"
+	pony_config_path = /datum/greyscale_config/pony_clothes_override
 
 /datum/armor/bio_hood_security
 	melee = 25
@@ -93,10 +96,6 @@
 /obj/item/clothing/suit/bio_suit/security
 	armor_type = /datum/armor/bio_suit_security
 	icon_state = "bio_security"
-	supports_variations_flags = CLOTHING_PONY_MASK
-	pony_clothing_sample_pixels = null
-	pony_icon_state = "bio_security"
-	pony_config_path = /datum/greyscale_config/pony_clothes_override
 
 /datum/armor/bio_suit_security
 	melee = 25

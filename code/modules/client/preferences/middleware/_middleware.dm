@@ -51,6 +51,10 @@
 /datum/preference_middleware/proc/on_new_character(mob/user)
 	return
 
+/// Called after every update_preference
+/datum/preference_middleware/proc/post_set_preference(mob/user, preference, value)
+
 /// Called when the menu is closed.
 /datum/preference_middleware/proc/on_ui_close(mob/user)
+
 	return

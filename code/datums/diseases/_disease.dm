@@ -104,6 +104,7 @@
 		slowdown *= 3 // speed that MF up
 	var/recovery_prob = 0
 	var/cure_mod
+	var/bad_immune = HAS_TRAIT(affected_mob, TRAIT_IMMUNODEFICIENCY) ? 2 : 1
 
 	if(required_organ)
 		if(!has_required_infectious_organ(affected_mob, required_organ))
@@ -111,7 +112,7 @@
 			return FALSE
 
 	if(has_cure())
-		cure_mod = cure_chance
+		cure_mod = cure_chance / bad_immune
 		if(istype(src, /datum/disease/advance))
 			cure_mod = max(cure_chance, DISEASE_MINIMUM_CHEMICAL_CURE_CHANCE)
 		if(disease_flags & CHRONIC && SPT_PROB(cure_mod, seconds_per_tick))
@@ -127,7 +128,7 @@
 	if(stage == max_stages && stage_peaked != TRUE) //mostly a sanity check in case we manually set a virus to max stages
 		stage_peaked = TRUE
 
-	if(SPT_PROB(stage_prob*slowdown, seconds_per_tick))
+	if(SPT_PROB(stage_prob*slowdown*bad_immune, seconds_per_tick))
 		update_stage(min(stage + 1, max_stages))
 
 	if(!(disease_flags & CHRONIC) && disease_flags & CURABLE && bypasses_immunity != TRUE)
@@ -206,7 +207,7 @@
 
 			recovery_prob *= DISEASE_SLEEPING_RECOVERY_MULTIPLIER //any form of sleeping magnifies all effects a little bit
 
-		recovery_prob = clamp(recovery_prob, 0, 100)
+		recovery_prob = clamp(recovery_prob / bad_immune, 0, 100)
 
 		if(recovery_prob)
 			if(SPT_PROB(recovery_prob, seconds_per_tick))
@@ -241,7 +242,7 @@
 
 	. = cures.len
 	for(var/C_id in cures)
-		if(!affected_mob.reagents.has_reagent(C_id))
+		if(!affected_mob.reagents.has_reagent(target_reagent = C_id, check_subtypes = TRUE))
 			.--
 	if(!. || (needs_all_cures && . < cures.len))
 		return FALSE

@@ -4,8 +4,6 @@
 	argument_hash_start_idx = 2
 	///The sound played for movables with claw step sound type.
 	var/clawfootstep
-	///The sound played for movables with hoof step sound type.
-	var/hooffootstep
 	///The sound played for movables with barefoot step sound type.
 	var/barefootstep
 	///The sound played for movables with heavy step sound type.
@@ -20,13 +18,12 @@
 	 */
 	var/list/occupied_turfs = list()
 
-/datum/element/footstep_override/Attach(atom/movable/target, hooffootstep = FOOTSTEP_MOB_HOOF, clawfootstep = FOOTSTEP_HARD_CLAW, barefootstep = FOOTSTEP_HARD_BAREFOOT, heavyfootstep = FOOTSTEP_GENERIC_HEAVY, footstep = FOOTSTEP_FLOOR, priority = STEP_SOUND_NO_PRIORITY)
+/datum/element/footstep_override/Attach(atom/movable/target, clawfootstep = FOOTSTEP_HARD_CLAW, barefootstep = FOOTSTEP_HARD_BAREFOOT, heavyfootstep = FOOTSTEP_GENERIC_HEAVY, footstep = FOOTSTEP_FLOOR, priority = STEP_SOUND_NO_PRIORITY)
 	. = ..()
 	if(!ismovable(target))
 		return ELEMENT_INCOMPATIBLE
 
 	src.clawfootstep = clawfootstep
-	src.hooffootstep = hooffootstep
 	src.barefootstep = barefootstep
 	src.heavyfootstep = heavyfootstep
 	src.footstep = footstep
@@ -80,6 +77,5 @@
 	steps[FOOTSTEP_MOB_BAREFOOT] = barefootstep
 	steps[FOOTSTEP_MOB_HEAVY] = heavyfootstep
 	steps[FOOTSTEP_MOB_CLAW] = clawfootstep
-	steps[FOOTSTEP_MOB_HOOF] = hooffootstep
 	steps[STEP_SOUND_PRIORITY] = priority
 	return FOOTSTEP_OVERRIDEN

@@ -50,7 +50,7 @@ MULTIPLICATIVE_MOVESPEED /mob/living/basic 0
 
 ## NAMES ###
 ## If uncommented this adds a random surname to a player's name if they only specify one name.
-#HUMANS_NEED_SURNAMES
+# HUMANS_NEED_SURNAMES
 
 ## If uncommented, this forces all players to use random names !and appearances!.
 #FORCE_RANDOM_NAMES
@@ -137,22 +137,17 @@ ALLOW_LATEJOIN_ANTAGONISTS
 #DISABLE_WAROPS
 
 ## Uncomment to enable dynamic ruleset config file.
-#DYNAMIC_CONFIG_ENABLED
+DYNAMIC_CONFIG_ENABLED
+
+## Uncomment to enable event editing config file.
+#EVENTS_CONFIG_ENABLED
 
 ## RANDOM EVENTS ###
 ## Comment this out to disable random events during the round.
-#ALLOW_RANDOM_EVENTS
+ALLOW_RANDOM_EVENTS
 
 ## Uncomment this to disable station traits.
-FORBID_STATION_TRAITS
-
-## Multiplier for earliest start time of dangerous events.
-## Set to 0 to make dangerous events available from round start.
-EVENTS_MIN_TIME_MUL 1
-
-## Multiplier for minimal player count (players = alive non-AFK humans) for dangerous events to start.
-## Set to 0 to make dangerous events available for all populations.
-EVENTS_MIN_PLAYERS_MUL 1
+#FORBID_STATION_TRAITS
 
 ## The lower bound, in deciseconds, for how soon another random event can be scheduled.
 ## Defaults to 1500 deciseconds or 2.5 minutes
@@ -232,7 +227,7 @@ DEPSEC_ACCESS_LEVEL 2
 
 ## NEAR-DEATH EXPERIENCE ###
 ## Comment this out to disable mobs hearing ghosts when unconscious and very close to death
-#NEAR_DEATH_EXPERIENCE
+NEAR_DEATH_EXPERIENCE
 
 ## NON-VOCAL SILICONS ###
 ## Uncomment these to stop the AI, or cyborgs, from having vocal communication.
@@ -360,6 +355,7 @@ SILICON_MAX_LAW_AMOUNT 12
 
 ## You probably want humans on your space station, but technically speaking you can turn them off without any ill effect
 ROUNDSTART_RACES human
+ROUNDSTART_RACES pony
 
 ## Races that are strictly worse than humans that could probably be turned on without balance concerns
 #ROUNDSTART_RACES felinid
@@ -500,7 +496,7 @@ MONKEYCAP 64
 RATCAP 64
 
 ## Maximum fine for a citation
-MAXFINE 2000
+MAXFINE 20000
 
 ## Which role is required of playtime to be eligible for Maintenance Drones
 ## See code/__DEFINES/preferences.dm for available options, use the string portion without quotes
@@ -520,7 +516,7 @@ MAXFINE 2000
 
 ## Comment if you wish to enable title music playing at the lobby screen. This flag is disabled by default to facilitate better code testing on local machines.
 ## Do keep in mind that this flag will not affect individual player's preferences: if they opt-out on your server, it will never play for them.
-#DISALLOW_TITLE_MUSIC
+DISALLOW_TITLE_MUSIC
 
 ## If enabled, then when the database is disabled, all players will get tutorials.
 ## This is primarily useful for developing tutorials. If you have a proper DB setup, you
@@ -560,3 +556,27 @@ MAX_POSITIVE_QUIRKS 6
 # If the value is lower than 1, it'll tend to even out the odds
 # If higher than 1, it'll lean toward common spawns even more.
 RANDOM_LOOT_WEIGHT_MODIFIER 1
+
+## Custom shuttle spam prevention. Changine these numbers allows you to change the maxsize and amount of custom shuttles.
+MAX_SHUTTLE_COUNT 6
+MAX_SHUTTLE_SIZE 300
+
+### Spy config
+## Changes refresh period between bounties - in deciseconds
+SPY_BOUNTY_REFRESH_TIMER 7200
+## Changes amount of easy bounties offered at once. Limit = 8
+SPY_BOUNTY_MAX_EASY 4
+## Changes amount of medium bounties offered at once. Limit = 6
+SPY_BOUNTY_MAX_MEDIUM 2
+## Changes amount of hard bounties offered at once. Limit = 4
+SPY_BOUNTY_MAX_HARD 2
+## Changes amount of refreshes necessary per each hard bounty
+## 1 = A hard bounty is added per refresh (until the max)
+## 0.5 = A hard bounty is added every 2 refreshes (until the max).
+SPY_BOUNTY_HARD_BOUNTIES_PER_REFRESH 1
+## Easy bounties grant uplink rewards that cost this much TC (or lower).
+## Also functions as the lower end for medium bounties.
+SPY_EASY_REWARD_TC_THRESHOLD 5
+## Hard bounties grant uplink rewards that cost this much TC (or higher).
+## Also functions as the upper end for medium bounties.
+SPY_HARD_REWARD_TC_THRESHOLD 15

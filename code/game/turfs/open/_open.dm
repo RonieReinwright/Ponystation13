@@ -7,7 +7,6 @@
 	var/footstep = null
 	var/barefootstep = null
 	var/clawfootstep = null
-	var/hooffootstep = null
 	var/heavyfootstep = null
 
 	/// Determines the type of damage overlay that will be used for the tile
@@ -129,7 +128,6 @@
 	footstep = FOOTSTEP_FLOOR
 	barefootstep = FOOTSTEP_HARD_BAREFOOT
 	clawfootstep = FOOTSTEP_HARD_CLAW
-	clawfootstep = FOOTSTEP_HARD_HOOF
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 	tiled_dirt = TRUE
 
@@ -206,7 +204,6 @@
 	footstep = FOOTSTEP_LAVA
 	barefootstep = FOOTSTEP_LAVA
 	clawfootstep = FOOTSTEP_LAVA
-	hooffootstep = FOOTSTEP_LAVA
 	heavyfootstep = FOOTSTEP_LAVA
 	tiled_dirt = FALSE
 
@@ -270,7 +267,6 @@
 	footstep = null
 	barefootstep = null
 	clawfootstep = null
-	hooffootstep = null
 	heavyfootstep = null
 	tiled_dirt = FALSE
 
@@ -282,7 +278,6 @@
 	footstep = null
 	barefootstep = null
 	clawfootstep = null
-	hooffootstep = null
 	heavyfootstep = null
 
 /turf/open/indestructible/airblock
@@ -296,7 +291,6 @@
 	footstep = FOOTSTEP_MEAT
 	barefootstep = FOOTSTEP_MEAT
 	clawfootstep = FOOTSTEP_MEAT
-	hooffootstep = FOOTSTEP_MEAT
 	heavyfootstep = FOOTSTEP_MEAT
 	initial_gas_mix = OPENTURF_DEFAULT_ATMOS
 	baseturfs = /turf/open/indestructible/meat
