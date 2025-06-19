@@ -32,6 +32,8 @@
 			return
 		if(FOOTSTEP_MOB_CLAW)
 			footstep_sounds = GLOB.clawfootstep
+		if(FOOTSTEP_MOB_HOOF)
+			footstep_sounds = GLOB.hooffootstep
 		if(FOOTSTEP_MOB_BAREFOOT)
 			footstep_sounds = GLOB.barefootstep
 		if(FOOTSTEP_MOB_HEAVY)
@@ -103,6 +105,7 @@
 	var/list/footstep_data = list(
 		FOOTSTEP_MOB_SHOE = turf.footstep,
 		FOOTSTEP_MOB_BAREFOOT = turf.barefootstep,
+		FOOTSTEP_MOB_HOOF = turf.hooffootstep,
 		FOOTSTEP_MOB_HEAVY = turf.heavyfootstep,
 		FOOTSTEP_MOB_CLAW = turf.clawfootstep,
 		STEP_SOUND_PRIORITY = STEP_SOUND_NO_PRIORITY,
@@ -174,6 +177,8 @@
 		switch(footstep_type)
 			if(FOOTSTEP_MOB_CLAW)
 				footstep_sounds = GLOB.clawfootstep[prepared_steps[footstep_type]]
+			if(FOOTSTEP_MOB_HOOF)
+				footstep_sounds = GLOB.hooffootstep[prepared_steps[footstep_type]]
 			if(FOOTSTEP_MOB_BAREFOOT)
 				footstep_sounds = GLOB.barefootstep[prepared_steps[footstep_type]]
 			if(FOOTSTEP_MOB_HEAVY)

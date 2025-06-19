@@ -13,6 +13,7 @@
 	footstep = FOOTSTEP_WATER
 	barefootstep = FOOTSTEP_WATER
 	clawfootstep = FOOTSTEP_WATER
+	hooffootstep = FOOTSTEP_WATER
 	heavyfootstep = FOOTSTEP_WATER
 	underfloor_accessibility = UNDERFLOOR_INTERACTABLE
 	/**
