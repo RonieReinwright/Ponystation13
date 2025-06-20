@@ -531,6 +531,11 @@
 	id = "ci-xray-moth"
 	build_path = /obj/item/organ/eyes/robotic/xray/moth
 
+/datum/design/cyberimp_xray/pony
+	name = "Pony X-ray Eyes"
+	id = "ci-xray-pony"
+	build_path = /obj/item/organ/eyes/robotic/xray/pony
+
 /datum/design/cyberimp_thermals
 	name = "Thermal Eyes"
 	desc = "These cybernetic eyes will give you Thermal vision. Vertical slit pupil included."
@@ -555,6 +560,11 @@
 	name = "Moth Thermal Eyes"
 	id = "ci-thermals-moth"
 	build_path = /obj/item/organ/eyes/robotic/thermals/moth
+
+/datum/design/cyberimp_thermals/pony
+	name = "Pony Thermal Eyes"
+	id = "ci-thermals-pony"
+	build_path = /obj/item/organ/eyes/robotic/thermals/pony
 
 /datum/design/cyberimp_antidrop
 	name = "Anti-Drop Implant"
@@ -974,6 +984,11 @@
 	)
 	departmental_flags = DEPARTMENT_BITFLAG_MEDICAL
 
+/datum/design/cybernetic_ears/pony
+	name = "Basic Cybernetic Pony Ears"
+	id = "cybernetic_ears_pony"
+	build_path = /obj/item/organ/ears/cybernetic/pony
+
 /datum/design/cybernetic_ears_u
 	name = "Cybernetic Ears"
 	desc = "A pair of cybernetic ears."
@@ -990,6 +1005,11 @@
 		RND_CATEGORY_CYBERNETICS + RND_SUBCATEGORY_CYBERNETICS_ORGANS_2
 	)
 	departmental_flags = DEPARTMENT_BITFLAG_MEDICAL
+
+/datum/design/cybernetic_ears_u/pony
+	name = "Cybernetic Pony Ears"
+	id = "cybernetic_ears_u_pony"
+	build_path = /obj/item/organ/ears/cybernetic/upgraded/pony
 
 /datum/design/cybernetic_ears_whisper
 	name = "Whisper-sensitive Cybernetic Ears"
@@ -1008,6 +1028,11 @@
 	)
 	departmental_flags = DEPARTMENT_BITFLAG_MEDICAL
 
+/datum/design/cybernetic_ears_whisper/pony
+	name = "Whisper-sensitive Cybernetic Pony Ears"
+	id = "cybernetic_ears_whisper_pony"
+	build_path = /obj/item/organ/ears/cybernetic/whisper/pony
+
 /datum/design/cybernetic_ears_xray
 	name = "Wall-penetrating Cybernetic Ears"
 	desc = "A pair of wall-penetrating cybernetic ears."
@@ -1024,6 +1049,13 @@
 		RND_CATEGORY_CYBERNETICS + RND_SUBCATEGORY_CYBERNETICS_ORGANS_3
 	)
 	departmental_flags = DEPARTMENT_BITFLAG_MEDICAL
+
+/datum/design/cybernetic_ears_xray/pony
+	name = "Wall-penetrating Cybernetic Pony Ears"
+	id = "cybernetic_ears_xray_pony"
+	build_path = /obj/item/organ/ears/cybernetic/xray/pony
+
+// Basic Cybernetic Eyes
 
 /datum/design/cybernetic_eyes
 	name = "Basic Cybernetic Eyes"
@@ -1043,6 +1075,13 @@
 	id = "cybernetic_eyes_moth"
 	build_path = /obj/item/organ/eyes/robotic/basic/moth
 
+/datum/design/cybernetic_eyes/pony
+	name = "Basic Cybernetic Pony Eyes"
+	id = "cybernetic_eyes_pony"
+	build_path = /obj/item/organ/eyes/robotic/basic/pony
+
+// Improved Cybernetic Eyes
+
 /datum/design/cybernetic_eyes/improved
 	name = "Cybernetic Eyes"
 	desc = "A pair of cybernetic eyes."
@@ -1057,6 +1096,13 @@
 	name = "Cybernetic Moth Eyes"
 	id = "cybernetic_eyes_improved_moth"
 	build_path = /obj/item/organ/eyes/robotic/moth
+
+/datum/design/cybernetic_eyes/improved/pony
+	name = "Cybernetic Pony Eyes"
+	id = "cybernetic_eyes_improved_pony"
+	build_path = /obj/item/organ/eyes/robotic/pony
+
+// Welding Shield Eyes
 
 /datum/design/cyberimp_welding
 	name = "Welding Shield Eyes"
@@ -1075,6 +1121,13 @@
 	name = "Welding Shield Moth Eyes"
 	id = "ci-welding-moth"
 	build_path = /obj/item/organ/eyes/robotic/shield/moth
+
+/datum/design/cyberimp_welding/pony
+	name = "Welding Shield Pony Eyes"
+	id = "ci-welding-pony"
+	build_path = /obj/item/organ/eyes/robotic/shield/pony
+
+// Glow Eyes
 
 /datum/design/cyberimp_gloweyes
 	name = "Luminescent Eyes"

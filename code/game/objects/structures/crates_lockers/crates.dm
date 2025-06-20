@@ -301,6 +301,14 @@
 	new /obj/item/bodypart/leg/left/robot/surplus(src)
 	new /obj/item/bodypart/leg/right/robot/surplus(src)
 	new /obj/item/bodypart/leg/right/robot/surplus(src)
+	new /obj/item/bodypart/arm/left/robot/pony/surplus(src)
+	new /obj/item/bodypart/arm/left/robot/pony/surplus(src)
+	new /obj/item/bodypart/arm/right/robot/pony/surplus(src)
+	new /obj/item/bodypart/arm/right/robot/pony/surplus(src)
+	new /obj/item/bodypart/leg/left/robot/pony/surplus(src)
+	new /obj/item/bodypart/leg/left/robot/pony/surplus(src)
+	new /obj/item/bodypart/leg/right/robot/pony/surplus(src)
+	new /obj/item/bodypart/leg/right/robot/pony/surplus(src)
 
 /obj/structure/closet/crate/freezer/organ
 	name = "organ freezer"
@@ -312,6 +320,8 @@
 	new /obj/item/organ/lungs(src)
 	new /obj/item/organ/eyes(src)
 	new /obj/item/organ/ears(src)
+	new /obj/item/organ/eyes/pony(src)
+	new /obj/item/organ/ears/pony(src)
 	new /obj/item/organ/tongue(src)
 	new /obj/item/organ/liver(src)
 	new /obj/item/organ/stomach(src)

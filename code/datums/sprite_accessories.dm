@@ -48,7 +48,7 @@
 	/// Basically this is to blacklist the extremely wacky stuff from being picked in random human generation.
 	var/natural_spawn = TRUE
 	/// What bodyshape are we built for? Used for pony hair offsets.
-	var/compatible_bodyshapes = BODYSHAPE_HUMANOID | BODYSHAPE_DIGITIGRADE | BODYSHAPE_MONKEY | BODYSHAPE_SNOUTED
+	var/compatible_bodyshapes = BODYSHAPE_HUMANOID | BODYSHAPE_DIGITIGRADE | BODYSHAPE_MONKEY | BODYSHAPE_SNOUTED | BODYSHAPE_PONY
 
 /datum/sprite_accessory/blank
 	name = SPRITE_ACCESSORY_NONE

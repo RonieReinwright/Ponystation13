@@ -240,6 +240,63 @@
 	// Same sensitivity as felinid ears
 	damage_multiplier = 2
 
+// CYBERNETIC PONY EARS
+/obj/item/organ/ears/cybernetic/pony
+	name = "basic cybernetic pony ears"
+	icon_state = "ears-c"
+	worn_icon = 'icons/mob/human/species/pony/bodyparts.dmi'
+	worn_icon_state = "m_pony_ears_pony_FRONT"
+	desc = "A basic cybernetic organ designed to mimic the operation of ears. Fit for equids."
+	visual = TRUE
+	damage_multiplier = 1.8
+	organ_flags = ORGAN_ROBOTIC
+	failing_desc = "seems to be broken."
+	bodypart_overlay = /datum/bodypart_overlay/mutant/pony_ears
+
+/obj/item/organ/ears/cybernetic/upgraded/pony
+	name = "cybernetic pony ears"
+	icon_state = "ears-c-u"
+	worn_icon = 'icons/mob/human/species/pony/bodyparts.dmi'
+	worn_icon_state = "m_pony_ears_pony_FRONT"
+	desc =  "An advanced cybernetic ear, surpassing the performance of organic ears. Fit for equids."
+	visual = TRUE
+	damage_multiplier = 1.0
+	bodypart_overlay = /datum/bodypart_overlay/mutant/pony_ears
+
+/obj/item/organ/ears/cybernetic/whisper/pony
+	name = "whisper-sensitive cybernetic pony ears"
+	icon_state = "ears-c-u"
+	worn_icon = 'icons/mob/human/species/pony/bodyparts.dmi'
+	worn_icon_state = "m_pony_ears_pony_FRONT"
+	desc = "Allows the user to more easily hear whispers. The user becomes extra vulnerable to loud noises, however. Fit for equids."
+	visual = TRUE
+	damage_multiplier = 2.2
+	bodypart_overlay = /datum/bodypart_overlay/mutant/pony_ears
+
+/obj/item/organ/ears/cybernetic/xray/pony
+	name = "wall-penetrating cybernetic pony ears"
+	icon_state = "ears-c-u"
+	worn_icon = 'icons/mob/human/species/pony/bodyparts.dmi'
+	worn_icon_state = "m_pony_ears_pony_FRONT"
+	desc = "Through the power of modern engineering, allows the user to hear speech through walls. The user becomes extra vulnerable to loud noises, however. Fit for equids."
+	visual = TRUE
+	damage_multiplier = 2.2
+	bodypart_overlay = /datum/bodypart_overlay/mutant/pony_ears
+
+/datum/bodypart_overlay/mutant/pony_ears
+	layers = EXTERNAL_FRONT | EXTERNAL_ADJACENT | EXTERNAL_BEHIND
+	color_source = ORGAN_COLOR_OVERRIDE
+	feature_key = "pony_ears"
+	dyable = TRUE
+
+/datum/bodypart_overlay/mutant/pony_ears/override_color(obj/item/bodypart/bodypart_owner)
+	//If the owner uses mutant colors, inherit the color of the bodypart
+	if(!bodypart_owner.owner || HAS_TRAIT(bodypart_owner.owner, TRAIT_MUTANT_COLORS))
+		return bodypart_owner.draw_color
+	else
+		return "#FFFFFF"
+// !
+
 // The original idea was to use signals to do this not traits. Unfortunately, the star effect used for whispers applies before any relevant signals
 // This seems like the least invasive solution
 /obj/item/organ/ears/cybernetic/whisper/on_mob_insert(mob/living/carbon/ear_owner)

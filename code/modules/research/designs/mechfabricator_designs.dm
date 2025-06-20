@@ -21,6 +21,11 @@
 		RND_CATEGORY_MECHFAB_CYBORG + RND_SUBCATEGORY_MECHFAB_CYBORG_CHASSIS
 	)
 
+/datum/design/borg_chest/pony
+	name = "Cyborg Pony Torso"
+	id = "borg_chest_pony"
+	build_path = /obj/item/bodypart/chest/robot/pony
+
 /datum/design/borg_head
 	name = "Cyborg Head"
 	id = "borg_head"
@@ -31,6 +36,11 @@
 	category = list(
 		RND_CATEGORY_MECHFAB_CYBORG + RND_SUBCATEGORY_MECHFAB_CYBORG_CHASSIS
 	)
+
+/datum/design/borg_head/pony
+	name = "Cyborg Pony Head"
+	id = "borg_head_pony"
+	build_path = /obj/item/bodypart/head/robot/pony
 
 /datum/design/borg_l_arm
 	name = "Cyborg Left Arm"
@@ -43,6 +53,11 @@
 		RND_CATEGORY_MECHFAB_CYBORG + RND_SUBCATEGORY_MECHFAB_CYBORG_CHASSIS
 	)
 
+/datum/design/borg_l_arm/pony
+	name = "Cyborg Left Foreleg"
+	id = "borg_l_arm_pony"
+	build_path = /obj/item/bodypart/arm/left/robot/pony
+
 /datum/design/borg_r_arm
 	name = "Cyborg Right Arm"
 	id = "borg_r_arm"
@@ -53,6 +68,11 @@
 	category = list(
 		RND_CATEGORY_MECHFAB_CYBORG + RND_SUBCATEGORY_MECHFAB_CYBORG_CHASSIS
 	)
+
+/datum/design/borg_r_arm/pony
+	name = "Cyborg Right Foreleg"
+	id = "borg_r_arm_pony"
+	build_path = /obj/item/bodypart/arm/right/robot/pony
 
 /datum/design/borg_l_leg
 	name = "Cyborg Left Leg"
@@ -65,6 +85,11 @@
 		RND_CATEGORY_MECHFAB_CYBORG + RND_SUBCATEGORY_MECHFAB_CYBORG_CHASSIS
 	)
 
+/datum/design/borg_l_leg/pony
+	name = "Cyborg Left Hindleg"
+	id = "borg_l_leg_pony"
+	build_path = /obj/item/bodypart/leg/left/robot/pony
+
 /datum/design/borg_r_leg
 	name = "Cyborg Right Leg"
 	id = "borg_r_leg"
@@ -75,6 +100,11 @@
 	category = list(
 		RND_CATEGORY_MECHFAB_CYBORG + RND_SUBCATEGORY_MECHFAB_CYBORG_CHASSIS
 	)
+
+/datum/design/borg_r_leg/pony
+	name = "Cyborg Right Hindleg"
+	id = "borg_r_leg_pony"
+	build_path = /obj/item/bodypart/leg/right/robot/pony
 
 //Advanced Robotic Limbs
 

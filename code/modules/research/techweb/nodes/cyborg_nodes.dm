@@ -11,10 +11,17 @@
 		"borg_l_leg",
 		"borg_r_arm",
 		"borg_r_leg",
+		"borg_chest_pony",
+		"borg_head_pony",
+		"borg_l_arm_pony",
+		"borg_l_leg_pony",
+		"borg_r_arm_pony",
+		"borg_r_leg_pony",
 		"borg_suit",
 		"cybernetic_eyes",
-		"cybernetic_eyes_moth",
+		"cybernetic_eyes_pony",
 		"cybernetic_ears",
+		"cybernetic_ears_pony",
 		"cybernetic_lungs",
 		"cybernetic_stomach",
 		"cybernetic_liver",
@@ -205,8 +212,9 @@
 	prereq_ids = list(TECHWEB_NODE_CYBERNETICS)
 	design_ids = list(
 		"cybernetic_eyes_improved",
-		"cybernetic_eyes_improved_moth",
+		"cybernetic_eyes_improved_pony",
 		"cybernetic_ears_u",
+		"cybernetic_ears_u_pony",
 		"cybernetic_lungs_tier2",
 		"cybernetic_stomach_tier2",
 		"cybernetic_liver_tier2",
@@ -223,9 +231,9 @@
 	design_ids = list(
 		"ci-gloweyes",
 		"ci-welding",
-		"ci-gloweyes-moth",
-		"ci-welding-moth",
+		"ci-welding-pony",
 		"cybernetic_ears_whisper",
+		"cybernetic_ears_whisper_pony",
 		"cybernetic_lungs_tier3",
 		"cybernetic_stomach_tier3",
 		"cybernetic_liver_tier3",
@@ -242,10 +250,11 @@
 	prereq_ids = list(TECHWEB_NODE_CYBER_ORGANS_UPGRADED, TECHWEB_NODE_NIGHT_VISION)
 	design_ids = list(
 		"cybernetic_ears_xray",
+		"cybernetic_ears_xray_pony",
 		"ci-thermals",
 		"ci-xray",
-		"ci-thermals-moth",
-		"ci-xray-moth",
+		"ci-thermals-pony",
+		"ci-xray-pony",
 	)
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = TECHWEB_TIER_5_POINTS)
 	discount_experiments = list(/datum/experiment/scanning/people/android = TECHWEB_TIER_5_POINTS)

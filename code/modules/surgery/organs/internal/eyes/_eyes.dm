@@ -1003,6 +1003,8 @@
 #undef UPDATE_EYES_LEFT
 #undef UPDATE_EYES_RIGHT
 
+// Moth
+
 /obj/item/organ/eyes/moth
 	name = "moth eyes"
 	desc = "These eyes seem to have increased sensitivity to bright light, with no improvement to low light vision."
@@ -1063,6 +1065,48 @@
 	eye_color_left = "#901f38"
 	eye_color_right = "#901f38"
 	blink_animation = FALSE
+
+// Pony
+/obj/item/organ/eyes/robotic/pony
+	name = "robotic pony eyes"
+	desc = "Your vision is augmented."
+	icon_state = "eyes_cyber"
+	eye_icon_state = "pony_eye"
+
+/obj/item/organ/eyes/robotic/basic/pony
+	name = "basic robotic pony eyes"
+	icon_state = "eyes_cyber_basic"
+	eye_icon_state = "pony_eye"
+	eye_color_left = "#65686f"
+	eye_color_right = "#65686f"
+	blink_animation = FALSE
+
+/obj/item/organ/eyes/robotic/xray/pony
+	name = "pony x-ray eyes"
+	desc = "These cybernetic imitation pony eyes will give you X-ray vision. Blinking is futile."
+	icon_state = "eyes_cyber_xray"
+	eye_icon_state = "pony_eye"
+	eye_color_left = "#3c4e52"
+	eye_color_right = "#3c4e52"
+	blink_animation = FALSE
+
+/obj/item/organ/eyes/robotic/shield/pony
+	name = "shielded robotic pony eyes"
+	icon_state = "eyes_cyber_shield"
+	eye_icon_state = "pony_eye"
+	eye_color_left = "#353845"
+	eye_color_right = "#353845"
+	blink_animation = FALSE
+
+/obj/item/organ/eyes/robotic/thermals/pony //we inherit flash weakness from thermals
+	name = "thermal pony eyes"
+	icon_state = "eyes_cyber_thermal"
+	eye_icon_state = "pony_eye"
+	eye_color_left = "#901f38"
+	eye_color_right = "#901f38"
+	blink_animation = FALSE
+
+// end pony
 
 /obj/item/organ/eyes/snail
 	name = "snail eyes"
