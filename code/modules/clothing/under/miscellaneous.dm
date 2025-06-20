@@ -8,6 +8,14 @@
 	can_adjust = FALSE
 	inhand_icon_state = "w_suit"
 
+/obj/item/clothing/under/misc/harness
+	name = "Harness"
+	desc = "A harness for Equines."
+	can_adjust = FALSE
+	icon_state = "harness"
+	inhand_icon_state = "harness"
+	body_parts_covered = GROIN
+
 /obj/item/clothing/under/misc/pj/red
 	icon_state = "red_pyjamas"
 

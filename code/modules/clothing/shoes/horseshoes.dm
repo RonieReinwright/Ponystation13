@@ -1,7 +1,7 @@
 /obj/item/clothing/shoes/horseshoes
 	name = "horesshoes"
 	desc = "Plain, regular horseshoes."
-	icon_state = "insulatedhorseshoes"
+	icon_state = "horseshoes"
 	equip_sound = 'sound/items/trayhit/trayhit1.ogg'
 	fastening_type = SHOES_SLIPON
 	strip_delay = 50

@@ -167,6 +167,8 @@ GLOBAL_LIST_INIT(autodrobe_other_items, list(
 	/obj/item/clothing/mask/gas/prop = 4,
 	/obj/item/clothing/mask/gas/atmosprop = 3,
 	/obj/item/clothing/mask/animal/small/tribal = 1,
+	/obj/item/clothing/under/misc/harness = 5,
+	/obj/item/clothing/shoes/horseshoes = 5,
 ))
 
 GLOBAL_LIST_INIT(autodrobe_premium_items, list(
