@@ -1318,4 +1318,3 @@
 /datum/bodypart_overlay/simple/body_marking/cutie_mark/generate_icon_cache()
 	. = ..()
 	. += md5(icon)
-
