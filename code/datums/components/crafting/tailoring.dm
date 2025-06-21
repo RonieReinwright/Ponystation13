@@ -656,7 +656,7 @@
 
 /datum/crafting_recipe/insulated_horseshoes
 	name = "Insulated Horseshoes"
-	result = /obj/item/clothing/shoes/horseshoes
+	result = /obj/item/clothing/shoes/horseshoes/insulated
 	time = 6 SECONDS
 	tool_behaviors = list(TOOL_WIRECUTTER)
 	reqs = list(
