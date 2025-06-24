@@ -23,6 +23,7 @@ GLOBAL_LIST_INIT(crafting_category_food, list(
 ))
 
 GLOBAL_LIST_INIT(crafting_category, list(
+	CAT_EQUINE,
 	CAT_WEAPON_RANGED,
 	CAT_WEAPON_MELEE,
 	CAT_WEAPON_AMMO,

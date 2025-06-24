@@ -54,7 +54,7 @@
 	)
 
 /datum/design/borg_l_arm/pony
-	name = "Cyborg Left Foreleg"
+	name = "Cyborg Pony Left Arm"
 	id = "borg_l_arm_pony"
 	build_path = /obj/item/bodypart/arm/left/robot/pony
 
@@ -70,7 +70,7 @@
 	)
 
 /datum/design/borg_r_arm/pony
-	name = "Cyborg Right Foreleg"
+	name = "Cyborg Pony Right Arm"
 	id = "borg_r_arm_pony"
 	build_path = /obj/item/bodypart/arm/right/robot/pony
 
@@ -86,7 +86,7 @@
 	)
 
 /datum/design/borg_l_leg/pony
-	name = "Cyborg Left Hindleg"
+	name = "Cyborg Pony Left Leg"
 	id = "borg_l_leg_pony"
 	build_path = /obj/item/bodypart/leg/left/robot/pony
 
@@ -102,7 +102,7 @@
 	)
 
 /datum/design/borg_r_leg/pony
-	name = "Cyborg Right Hindleg"
+	name = "Cyborg Pony Right Leg"
 	id = "borg_r_leg_pony"
 	build_path = /obj/item/bodypart/leg/right/robot/pony
 

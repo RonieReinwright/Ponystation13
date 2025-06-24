@@ -39,6 +39,7 @@
 	new /obj/item/autosurgeon/syndicate/commsagent(src)
 	new /obj/item/book/granter/sign_language(src)
 	new	/obj/item/clothing/gloves/radio(src)
+	new /obj/item/clothing/shoes/horseshoes/radio(src)
 
 /obj/machinery/power/supermatter_crystal/shard/syndicate
 	name = "syndicate supermatter shard"

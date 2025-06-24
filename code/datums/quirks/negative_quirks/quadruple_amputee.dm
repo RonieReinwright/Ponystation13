@@ -14,6 +14,11 @@
 	human_holder.del_and_replace_bodypart(new /obj/item/bodypart/arm/right/robot/surplus, special = TRUE)
 	human_holder.del_and_replace_bodypart(new /obj/item/bodypart/leg/left/robot/surplus, special = TRUE)
 	human_holder.del_and_replace_bodypart(new /obj/item/bodypart/leg/right/robot/surplus, special = TRUE)
+	if(ispony(quirk_holder))
+		human_holder.del_and_replace_bodypart(new /obj/item/bodypart/arm/left/robot/pony/surplus, special = TRUE)
+		human_holder.del_and_replace_bodypart(new /obj/item/bodypart/arm/right/robot/pony/surplus, special = TRUE)
+		human_holder.del_and_replace_bodypart(new /obj/item/bodypart/leg/left/robot/pony/surplus, special = TRUE)
+		human_holder.del_and_replace_bodypart(new /obj/item/bodypart/leg/right/robot/pony/surplus, special = TRUE)
 
 /datum/quirk/quadruple_amputee/post_add()
 	to_chat(quirk_holder, span_bolddanger("All your limbs have been replaced with surplus prosthetics. They are fragile and will easily come apart under duress. \
@@ -22,7 +27,7 @@
 /datum/quirk/quadruple_amputee/remove()
 	if(QDELING(quirk_holder))
 		return
-	
+
 	var/mob/living/carbon/human/human_holder = quirk_holder
 	human_holder.reset_to_original_bodypart(BODY_ZONE_L_ARM)
 	human_holder.reset_to_original_bodypart(BODY_ZONE_R_ARM)

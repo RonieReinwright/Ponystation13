@@ -63,6 +63,7 @@
 
 //crafting defines
 //When adding new defines, please make sure to also add them to the encompassing list
+#define CAT_EQUINE "Equine"
 #define CAT_WEAPON_RANGED "Weapons Ranged"
 #define CAT_WEAPON_MELEE "Weapons Melee"
 #define CAT_WEAPON_AMMO "Weapon Ammo"

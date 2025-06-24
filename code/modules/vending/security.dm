@@ -16,6 +16,7 @@
 		/obj/item/flashlight/seclite = 4,
 		/obj/item/restraints/legcuffs/bola/energy = 7,
 		/obj/item/clothing/gloves/tackler = 5,
+		/obj/item/clothing/shoes/horseshoes/tackler = 5,
 		/obj/item/holosign_creator/security = 2,
 		/obj/item/gun_maintenance_supplies = 2,
 	)

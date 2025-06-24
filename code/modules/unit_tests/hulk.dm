@@ -34,6 +34,7 @@
 	var/mob/living/carbon/human/hulk = allocate(/mob/living/carbon/human/consistent)
 	var/mob/living/carbon/human/dummy = allocate(/mob/living/carbon/human/consistent)
 	var/obj/item/clothing/gloves/rapid/fotns = allocate(/obj/item/clothing/gloves/rapid)
+	var/obj/item/clothing/gloves/rapid/fotns = allocate(/obj/item/clothing/shoes/horseshoes/rapid)
 
 	hulk.equip_to_appropriate_slot(fotns)
 	hulk.dna.add_mutation(/datum/mutation/hulk, "TEST")

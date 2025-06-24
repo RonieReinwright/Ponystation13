@@ -41,6 +41,7 @@
 	new /obj/item/clothing/glasses/eyepatch(src)
 	new /obj/item/clothing/gloves/tackler/combat(src)
 	new /obj/item/clothing/gloves/tackler/combat(src)
+	new /obj/item/clothing/shoes/horseshoes/tackler(src)
 	new /obj/item/clothing/head/helmet/swat(src)
 	new /obj/item/clothing/head/helmet/swat(src)
 	new /obj/item/clothing/mask/gas/sechailer/swat(src)

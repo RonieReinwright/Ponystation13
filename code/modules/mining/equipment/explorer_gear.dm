@@ -15,6 +15,14 @@
 	hoodtype = /obj/item/clothing/head/hooded/explorer
 	armor_type = /datum/armor/hooded_explorer
 	resistance_flags = FIRE_PROOF
+	supports_variations_flags = CLOTHING_PONY_MASK
+	pony_clothing_sample_pixels = null
+	pony_icon_state = "explorer"
+	pony_config_path = /datum/greyscale_config/pony_clothes_override
+
+/obj/item/clothing/suit/hooded/explorer/generate_pony_icons(icon/base_icon, greyscale_colors)
+	var/icon/ponysuit = icon(SSgreyscale.GetColoredIconByType(pony_config_path, greyscale_colors), pony_icon_state)
+	return ponysuit
 
 /obj/item/clothing/suit/hooded/explorer/get_general_color(icon/base_icon)
 	return "#796755"

@@ -116,6 +116,7 @@
 	new /obj/item/clothing/glasses/hud/security/sunglasses(src)
 	new /obj/item/flashlight/seclite(src)
 	new /obj/item/clothing/gloves/tackler(src)
+	new /obj/item/clothing/shoes/horseshoes/tackler(src)
 
 /obj/structure/closet/secure_closet/security/sec
 

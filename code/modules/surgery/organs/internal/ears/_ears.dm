@@ -289,6 +289,9 @@
 	feature_key = "pony_ears"
 	dyable = TRUE
 
+/datum/bodypart_overlay/mutant/pony_ears/get_global_feature_list()
+	return SSaccessories.pony_ears_list
+
 /datum/bodypart_overlay/mutant/pony_ears/override_color(obj/item/bodypart/bodypart_owner)
 	//If the owner uses mutant colors, inherit the color of the bodypart
 	if(!bodypart_owner.owner || HAS_TRAIT(bodypart_owner.owner, TRAIT_MUTANT_COLORS))

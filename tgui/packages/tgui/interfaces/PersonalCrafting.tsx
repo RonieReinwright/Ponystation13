@@ -60,6 +60,7 @@ const CATEGORY_ICONS_CRAFTING = {
   Structures: 'cube',
   Tiles: 'border-all',
   Windows: 'person-through-window',
+  Equine: 'chess-knight',
   Doors: 'door-open',
   Furniture: 'chair',
   Equipment: 'calculator',

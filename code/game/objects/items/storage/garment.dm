@@ -49,6 +49,7 @@
 	new /obj/item/clothing/suit/jacket/capjacket(src)
 	new /obj/item/clothing/glasses/sunglasses/gar/giga(src)
 	new /obj/item/clothing/gloves/captain(src)
+	new /obj/item/clothing/shoes/horseshoes/captain(src)
 	new /obj/item/clothing/head/costume/crown/fancy(src)
 	new /obj/item/clothing/head/hats/caphat(src)
 	new /obj/item/clothing/head/hats/caphat/parade(src)
@@ -73,6 +74,7 @@
 	new /obj/item/clothing/under/rank/security/head_of_security/parade(src)
 	new /obj/item/clothing/under/rank/security/head_of_security/parade/female(src)
 	new /obj/item/clothing/gloves/tackler/combat(src)
+	new /obj/item/clothing/shoes/horseshoes/tackler/combat(src)
 	new /obj/item/clothing/suit/armor/hos(src)
 	new /obj/item/clothing/suit/armor/hos/hos_formal(src)
 	new /obj/item/clothing/suit/armor/hos/trenchcoat/winter(src)
@@ -93,6 +95,7 @@
 	new /obj/item/clothing/under/rank/security/warden/formal(src)
 	new /obj/item/clothing/under/rank/security/warden/skirt(src)
 	new /obj/item/clothing/gloves/krav_maga/sec(src)
+	new /obj/item/clothing/shoes/horseshoes/krav_maga/sec(src)
 	new /obj/item/clothing/glasses/hud/security/sunglasses(src)
 	new /obj/item/clothing/mask/gas/sechailer(src)
 

@@ -1346,6 +1346,7 @@
 #include "code\datums\components\crafting\crafting.dm"
 #include "code\datums\components\crafting\doors.dm"
 #include "code\datums\components\crafting\entertainment.dm"
+#include "code\datums\components\crafting\equine.dm"
 #include "code\datums\components\crafting\equipment.dm"
 #include "code\datums\components\crafting\furniture.dm"
 #include "code\datums\components\crafting\guncrafting.dm"

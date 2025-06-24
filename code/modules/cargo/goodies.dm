@@ -131,6 +131,12 @@
 	cost = PAYCHECK_COMMAND * 6
 	contains = list(/obj/item/clothing/gloves/tackler/combat)
 
+/datum/supply_pack/goody/gorillahorseshoes_single
+	name = "Gorilla Horseshoes Single-Pack"
+	desc = "A spare pair of gorilla horseshoes. Better for tackles than grippers from the security vendor."
+	cost = PAYCHECK_COMMAND * 6
+	contains = list(/obj/item/clothing/shoes/horseshoes/tackler/combat)
+
 /datum/supply_pack/goody/firstaidbruises_single
 	name = "Bruise Treatment Kit Single-Pack"
 	desc = "A single brute medkit, perfect for recovering from being crushed in an airlock. Did you know people get crushed in airlocks all the time? Interesting..."
