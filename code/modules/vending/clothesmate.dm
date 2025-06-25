@@ -153,6 +153,16 @@
 		),
 
 		list(
+			"name" = "Equine",
+			"icon" = "chess-knight",
+			"products" = list(
+				/obj/item/clothing/shoes/horseshoes = 15,
+				/obj/item/storage/backpack/saddlebag = 15,
+				/obj/item/clothing/under/misc/harness = 15,
+			),
+		),
+
+		list(
 			"name" = "Special",
 			"icon" = "star",
 			"products" = list(

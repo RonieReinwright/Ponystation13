@@ -134,7 +134,7 @@
 	worn_back_offset = new(
 		attached_part = src,
 		feature_key = OFFSET_BACK,
-		offset_x = list("north" = 0, "south" = 0, "east" = 2, "west" = -2),
+		offset_x = list("north" = 0, "south" = -1, "east" = 2, "west" = -2),
 		offset_y = list("north" = -4, "south" = -4, "east" = -5, "west" = -5),
 	)
 	worn_belt_offset = new(

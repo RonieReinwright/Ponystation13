@@ -935,6 +935,7 @@ Remember to update _globalvars/traits.dm if you're adding/removing/renaming trai
 #define TRAIT_BADTOUCH "bad_touch"
 #define TRAIT_EXTROVERT "extrovert"
 #define TRAIT_INTROVERT "introvert"
+#define TRAIT_COUNTRY "country"
 #define TRAIT_ANXIOUS "anxious"
 #define TRAIT_SMOKER "smoker"
 #define TRAIT_POSTERBOY "poster_boy"

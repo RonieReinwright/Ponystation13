@@ -109,3 +109,40 @@
 		/obj/item/clothing/gloves/captain = 1,
 		/obj/item/stack/sheet/iron = 1,
 	)
+
+/datum/crafting_recipe/latexhorse
+	name = "Latex Tack (Conversion)"
+	desc = "A crude but workable conversion."
+	result = /obj/item/clothing/shoes/horseshoes/latex
+	time = 6 SECONDS
+	tool_behaviors = list(TOOL_WIRECUTTER, TOOL_WELDER)
+	category = CAT_EQUINE
+	reqs = list(
+		/obj/item/clothing/gloves/latex = 1,
+	)
+
+/datum/crafting_recipe/nitrilehorse
+	name = "Nitrile Tack (Conversion)"
+	desc = "A crude but workable conversion."
+	result = /obj/item/clothing/shoes/horseshoes/latex/nitrile
+	time = 6 SECONDS
+	tool_behaviors = list(TOOL_WIRECUTTER, TOOL_WELDER)
+	category = CAT_EQUINE
+	reqs = list(
+		/obj/item/clothing/gloves/latex/nitrile = 1,
+	)
+
+/datum/crafting_recipe/flashlight_eyes_pony
+	name = "Flashlight Pony Eyes"
+	desc = "It's two flashlights rigged together with some wire. Why would you put these in somepony's head?"
+	result = /obj/item/organ/eyes/robotic/flashlight/pony
+	time = 10
+	reqs = list(
+		/obj/item/flashlight = 2,
+		/obj/item/restraints/handcuffs/cable = 1
+	)
+	category = CAT_EQUIPMENT
+
+/datum/crafting_recipe/flashlight_eyes_pony/New()
+	. = ..()
+	blacklist += typesof(/obj/item/flashlight/flare)

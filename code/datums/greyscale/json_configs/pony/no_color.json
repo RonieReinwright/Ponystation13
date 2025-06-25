@@ -173,6 +173,13 @@
 			"icon_state": "bio_security",
 			"blend_mode": "overlay"
 		}
+	],
+	"hazard": [
+		{
+			"type": "icon_state",
+			"icon_state": "hazard",
+			"blend_mode": "overlay"
+		}
 	]
 
 

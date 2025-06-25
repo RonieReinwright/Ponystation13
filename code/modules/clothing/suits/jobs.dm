@@ -214,6 +214,14 @@
 	)
 	resistance_flags = NONE
 	species_exception = list(/datum/species/golem)
+	supports_variations_flags = CLOTHING_PONY_MASK
+	pony_clothing_sample_pixels = null
+	pony_icon_state = "hazard"
+	pony_config_path = /datum/greyscale_config/pony_clothes_override
+
+/obj/item/clothing/suit/utility/radiation/generate_pony_icons(icon/base_icon, greyscale_colors)
+	var/icon/ponysuit = icon(SSgreyscale.GetColoredIconByType(pony_config_path, greyscale_colors), pony_icon_state)
+	return ponysuit
 
 /obj/item/clothing/suit/hazardvest/worn_overlays(mutable_appearance/standing, isinhands, icon_file)
 	. = ..()

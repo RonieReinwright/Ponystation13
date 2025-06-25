@@ -1106,6 +1106,11 @@
 	eye_color_right = "#901f38"
 	blink_animation = FALSE
 
+/obj/item/organ/eyes/robotic/flashlight/pony
+	name = "flashlight pony eyes"
+	icon_state = "flashlight_eyes"
+	eye_icon_state = "pony_eye"
+	blink_animation = FALSE
 // end pony
 
 /obj/item/organ/eyes/snail

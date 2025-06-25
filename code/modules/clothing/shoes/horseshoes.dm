@@ -153,7 +153,7 @@
 /obj/item/clothing/shoes/horseshoes/captain
 	desc = "Regal blue horseshoes, with a nice gold trim, a diamond anti-shock coating, and an integrated thermal barrier. Swanky."
 	name = "captain's horseshoes"
-	icon_state = "captain"
+	icon_state = "captainhorseshoes"
 	inhand_icon_state = null
 	greyscale_colors = null
 	siemens_coefficient = 0
@@ -174,3 +174,30 @@
 	bio = 90
 	fire = 70
 	acid = 50
+
+/obj/item/clothing/shoes/horseshoes/latex
+	name = "latex tack"
+	desc = "Cheap sterile fittings made from latex. Provides quicker carrying from a good grip."
+	icon_state = "latex"
+	inhand_icon_state = "latex_gloves"
+	greyscale_colors = null
+	siemens_coefficient = 0.3
+	armor_type = /datum/armor/latex_gloves
+	clothing_traits = list(TRAIT_QUICK_CARRY)
+	resistance_flags = NONE
+	equip_sound = 'sound/items/equip/glove_equip.ogg'
+
+/datum/armor/latex_gloves
+	bio = 100
+
+/obj/item/clothing/shoes/horseshoes/latex/nitrile
+	name = "nitrile tack"
+	desc = "Pricy sterile fittings that are thicker than latex. Excellent grip ensures very fast carrying of patients along with the faster use time of various chemical related items."
+	icon_state = "nitrile"
+	inhand_icon_state = "greyscale_gloves"
+	greyscale_colors = "#99eeff"
+	clothing_traits = list(TRAIT_QUICKER_CARRY, TRAIT_FASTMED)
+
+/obj/item/clothing/shoes/horseshoes/latex/nitrile/Initialize(mapload)
+	. = ..()
+	AddComponent(/datum/component/adjust_fishing_difficulty, -6)

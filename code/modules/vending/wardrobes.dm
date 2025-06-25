@@ -198,6 +198,7 @@ GLOBAL_VAR_INIT(roaches_deployed, FALSE)
 		/obj/item/clothing/gloves/fingerless = 3,
 		/obj/item/clothing/shoes/sneakers/black = 3,
 		/obj/item/storage/backpack = 3,
+		/obj/item/storage/backpack/saddlebag = 3,
 		/obj/item/storage/backpack/satchel = 3,
 		/obj/item/storage/backpack/satchel/leather = 3,
 		/obj/item/storage/backpack/duffelbag = 3,

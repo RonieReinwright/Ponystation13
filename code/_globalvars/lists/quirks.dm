@@ -18,6 +18,13 @@ GLOBAL_LIST_INIT(prosthetic_limb_choice, list(
 	"Right Leg" = /obj/item/bodypart/leg/right/robot/surplus,
 ))
 
+///Pony equivalent surplus limbs
+GLOBAL_LIST_INIT(prosthetic_limb_choice_pony, list(
+	"Left Arm" = /obj/item/bodypart/arm/left/robot/pony/surplus,
+	"Right Arm" = /obj/item/bodypart/arm/right/robot/pony/surplus,
+	"Left Leg" = /obj/item/bodypart/leg/left/robot/pony/surplus,
+	"Right Leg" = /obj/item/bodypart/leg/right/robot/pony/surplus,
+))
 
 ///Transhumanist quirk
 GLOBAL_LIST_INIT(part_choice_transhuman, list(
@@ -28,6 +35,17 @@ GLOBAL_LIST_INIT(part_choice_transhuman, list(
 	"Robotic Voice Box" = /obj/item/organ/tongue/robot,
 	"Flashlights for Eyes" = /obj/item/organ/eyes/robotic/flashlight,
 ))
+
+///Pony equivalent transhumanist limbs
+GLOBAL_LIST_INIT(part_choice_transhuman_pony, list(
+	"Left Arm" = /obj/item/bodypart/arm/left/robot/pony,
+	"Right Arm" = /obj/item/bodypart/arm/right/robot/pony,
+	"Left Leg" = /obj/item/bodypart/leg/left/robot/pony,
+	"Right Leg" = /obj/item/bodypart/leg/right/robot/pony,
+	"Robotic Voice Box" = /obj/item/organ/tongue/robot,
+	"Flashlights for Eyes" = /obj/item/organ/eyes/robotic/flashlight/pony,
+))
+
 
 ///Hemiplegic Quirk
 GLOBAL_LIST_INIT(side_choice_hemiplegic, list(

@@ -10,7 +10,7 @@
 	var/slot_string = "limb"
 	/// The slot to replace, in GLOB.limb_zones (both arms and both legs)
 	var/limb_zone
-	
+
 
 /datum/quirk_constant_data/prosthetic_limb
 	associated_typepath = /datum/quirk/prosthetic_limb
@@ -18,8 +18,12 @@
 
 /datum/quirk/prosthetic_limb/add_unique(client/client_source)
 	var/obj/item/bodypart/limb_type = GLOB.prosthetic_limb_choice[client_source?.prefs?.read_preference(/datum/preference/choiced/prosthetic)]
+	if(ispony(quirk_holder))
+		limb_type = GLOB.prosthetic_limb_choice_pony[client_source?.prefs?.read_preference(/datum/preference/choiced/prosthetic)]
 	if(isnull(limb_type))  //Client gone or they chose a random prosthetic
 		limb_type = GLOB.prosthetic_limb_choice[pick(GLOB.prosthetic_limb_choice)]
+		if(ispony(quirk_holder))
+			limb_type = GLOB.prosthetic_limb_choice_pony[GLOB.prosthetic_limb_choice]
 	limb_zone = limb_type.body_zone
 
 	var/mob/living/carbon/human/human_holder = quirk_holder

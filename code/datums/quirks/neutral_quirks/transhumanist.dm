@@ -107,8 +107,12 @@
 
 /datum/quirk/transhumanist/add_unique(client/client_source)
 	var/part_type = GLOB.part_choice_transhuman[client_source?.prefs?.read_preference(/datum/preference/choiced/trans_prosthetic)]
+	if(ispony(quirk_holder))
+		part_type = GLOB.part_choice_transhuman_pony[client_source?.prefs?.read_preference(/datum/preference/choiced/prosthetic)]
 	if(isnull(part_type))  //Client gone or they chose a random part
 		part_type = GLOB.part_choice_transhuman[pick(GLOB.part_choice_transhuman)]
+		if(ispony(quirk_holder))
+			part_type = GLOB.part_choice_transhuman_pony[GLOB.part_choice_transhuman]
 
 	if(quirk_holder.has_quirk(/datum/quirk/prosthetic_limb))
 		var/obj/item/bodypart/shit_limb = GLOB.prosthetic_limb_choice[client_source?.prefs?.read_preference(/datum/preference/choiced/prosthetic)]

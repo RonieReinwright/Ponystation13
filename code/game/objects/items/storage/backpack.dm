@@ -233,6 +233,11 @@
 	desc = "A spacious backpack with lots of pockets, worn by Clowns of an Emergency Response Team."
 	icon_state = "ert_clown"
 
+/obj/item/storage/backpack/saddlebag
+	name = "saddlebag"
+	desc = "Heftly saddlebags fit for equines."
+	icon_state = "saddlebag"
+
 /obj/item/storage/backpack/saddlepack
 	name = "saddlepack"
 	desc = "A backpack designed to be saddled on a mount or carried on your back, and switch between the two on the fly. It's quite spacious, at the cost of making you feel like a literal pack mule."
