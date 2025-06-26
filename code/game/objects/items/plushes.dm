@@ -887,3 +887,55 @@
 	playsound(src, 'sound/mobs/non-humanoids/gorilla/gorilla.ogg', 100, FALSE)
 	spasm_animation(5 SECONDS)
 	qdel(nana)
+
+/obj/item/toy/plush/pony
+	name = "pony plushie"
+	desc = "A squishy soft pony plushie. It has a magical aura."
+	icon_state = "anon_filly_plush"
+	attack_verb_continuous = list("boops","baps")
+	attack_verb_simple = list("boop", "bap")
+	
+/obj/item/toy/plush/pony/anon
+	name = "anon filly plushie"
+	desc = "A squishy soft anon filly plushie. We are Legion."
+	icon_state = "anon_filly_plush"
+
+/obj/item/toy/plush/pony/derpy
+	name = "derpy plushie"
+	desc = "A squishy soft derpy plushie. I just don't know what went wrong."
+	icon_state = "derpy_plush"
+
+/obj/item/toy/plush/pony/rainbowdash
+	name = "Rainbow Dash plushie"
+	desc = "A squishy soft Rainbow Dash plushie. This plush seems to look at least 20% cooler than the other ones."
+	icon_state = "rainbow_plush"
+
+/obj/item/toy/plush/pony/pinkie
+	name = "Rainbow Dash plushie"
+	desc = "A squishy soft Pinkie Pie plushie. This plush seems to smells like cupcakes."
+	icon_state = "pinkie_plush"
+
+/obj/item/toy/plush/pony/twilight
+	name = "Twilight Sparkle plushie"
+	desc = "A squishy soft Twilight Sparkle plushie. This plush looks like a nerd."
+	icon_state = "twilight_plush"
+
+/obj/item/toy/plush/pony/fluttershy
+	name = "fluttershy plushie"
+	desc = "A squishy soft fluttershy plushie. Kind of smells like a barn."
+	icon_state = "fluttershy_plush"
+
+/obj/item/toy/plush/pony/applejack
+	name = "applejack plushie"
+	desc = "A squishy soft applejack plushie. Apples."
+	icon_state = "applejack_plush"
+
+/obj/item/toy/plush/pony/rarity
+	name = "rarity plushie"
+	desc = "A squishy soft rarity plushie. It appears someone put real makeup on this plush."
+	icon_state = "rarity_plush"
+
+/obj/item/toy/plush/pony/lyra
+	name = "Lyra plushie"
+	desc = "A squishy soft lyra plushie. It appears to be trying to sit down"
+	icon_state = "lyra_plush"
