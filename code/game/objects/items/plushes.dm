@@ -951,6 +951,7 @@
 	START_PROCESSING(SSobj, src)
 	AddComponent(/datum/component/irradiated)
 	radiate()
+
 /obj/item/toy/plush/pony/derpy/rad/Destroy()
 	. = ..()
 	STOP_PROCESSING(SSobj, src)
