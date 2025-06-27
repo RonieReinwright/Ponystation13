@@ -921,6 +921,7 @@
 	icon_state = "twilight_plush"
 
 /obj/item/toy/plush/pony/fluttershy
+	name = "fluttershy plushie"
 	desc = "A squishy soft fluttershy plushie. Kind of smells like a barn."
 	icon_state = "fluttershy_plush"
 
