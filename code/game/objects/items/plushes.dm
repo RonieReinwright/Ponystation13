@@ -975,7 +975,7 @@
 	)
 /obj/item/toy/plush/pony/lyra/hole
 	name = "the Lyra plushie"
-	desc = "A squishy soft lyra plushie. It appears to have a hole cut in the back"
+	desc = "A squishy soft lyra plushie. It appears to have a hole sewed into the butt"
 	icon_state = "lyra_plush"
 
 /obj/item/toy/plush/pony/lyra/hole/Initialize(mapload)
