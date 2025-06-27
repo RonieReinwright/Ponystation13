@@ -906,17 +906,17 @@
 	icon_state = "derpy_plush"
 
 /obj/item/toy/plush/pony/rainbowdash
-	name = "Rainbow Dash plushie"
+	name = "rainbow Dash plushie"
 	desc = "A squishy soft Rainbow Dash plushie. This plush seems to look at least 20% cooler than the other ones."
 	icon_state = "rainbow_plush"
 
 /obj/item/toy/plush/pony/pinkie
-	name = "Rainbow Dash plushie"
+	name = "pinkie Pie plushie"
 	desc = "A squishy soft Pinkie Pie plushie. This plush seems to smells like cupcakes."
 	icon_state = "pinkie_plush"
 
 /obj/item/toy/plush/pony/twilight
-	name = "Twilight Sparkle plushie"
+	name = "twilight Sparkle plushie"
 	desc = "A squishy soft Twilight Sparkle plushie. This plush looks like a nerd."
 	icon_state = "twilight_plush"
 

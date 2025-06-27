@@ -282,22 +282,23 @@
 	crate_type = /obj/structure/closet/crate/wooden
 	discountable = SUPPLY_PACK_STD_DISCOUNTABLE
 
-	/datum/supply_pack/imports/lyraholepack
+	/datum/supply_pack/costumes_toys/lyraholepack
 	name = "Lyra Heartstrings Pencil Holder 3 pack"
 	desc = "Look, I'm going to level with you we got a shipment of these plushies with no label on. \
 	We're almost certain they are some sort of pencil holders. \
-	So enjoy all these plushies with useful storage space to put all your Small items\
+	So enjoy all these plushies with useful storage space to put all your Small items \
 	included but not limited to pencils"
-	cost = CARGO_CRATE_VALUE * 5
+	cost = CARGO_CRATE_VALUE * 3
 	contains = list(
 		/obj/item/toy/plush/pony/lyra/hole,
 		/obj/item/toy/plush/pony/lyra/hole,
 		/obj/item/toy/plush/pony/lyra/hole
 	)
-/datum/supply_pack/imports/ponyplushpack
+
+/datum/supply_pack/costumes_toys/ponyplushpack
 	name = "Pony Plush mega pack"
-	desc = "You like Pony plushies? We have Pony plushies. Buy this mega pack of ponies all your favorite mares are here"
-	cost = CARGO_CRATE_VALUE * 15
+	desc = "You like Pony plushies? We have Pony plushies. Buy this mega pack of ponies. all your favorite mares are here"
+	cost = CARGO_CRATE_VALUE * 6
 	contains = list(
 		/obj/item/toy/plush/pony/anon,
         /obj/item/toy/plush/pony/derpy,
@@ -309,5 +310,4 @@
         /obj/item/toy/plush/pony/rarity,
         /obj/item/toy/plush/pony/lyra
 	)
-
 
