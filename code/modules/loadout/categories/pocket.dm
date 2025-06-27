@@ -68,13 +68,14 @@
 	ui_icon_state = "plushie_lizard_random"
 	item_path = /obj/item/toy/plush/lizard_plushie
 
-/datum/loadout_item/pocket_items/plush/moth
-	name = "Plush (Moth)"
-	item_path = /obj/item/toy/plush/moth
+/datum/loadout_item/pocket_items/plush/nukie
+	name = "Plush (Nukie)"
+	item_path = /obj/item/toy/plush/nukeplushie
 
 /datum/loadout_item/pocket_items/plush/nukie
 	name = "Plush (Nukie)"
 	item_path = /obj/item/toy/plush/nukeplushie
+
 
 /datum/loadout_item/pocket_items/plush/peacekeeper
 	name = "Plush (Peacekeeper)"
@@ -99,6 +100,42 @@
 /datum/loadout_item/pocket_items/plush/horse
 	name = "Plush (Horse)"
 	item_path = /obj/item/toy/plush/horse
+
+/datum/loadout_item/pocket_items/plush/anon
+	name = "Plush (Anon Filly)"
+	item_path = /obj/item/toy/plush/pony/anon
+
+/datum/loadout_item/pocket_items/plush/derpy
+	name = "Plush (Derpy)"
+	item_path = /obj/item/toy/plush/pony/derpy
+
+/datum/loadout_item/pocket_items/plush/rainbowdash
+	name = "Plush (Rainbow Dash)"
+	item_path = /obj/item/toy/plush/pony/rainbowdash
+
+/datum/loadout_item/pocket_items/plush/pinkie
+	name = "Plush (Pinkie Pie)"
+	item_path = /obj/item/toy/plush/pony/pinkie
+
+/datum/loadout_item/pocket_items/plush/twilight
+	name = "Plush (Twilight Sparkle)"
+	item_path = /obj/item/toy/plush/pony/twilight
+
+/datum/loadout_item/pocket_items/plush/fluttershy
+	name = "Plush (Fluttershy)"
+	item_path = /obj/item/toy/plush/pony/fluttershy
+
+/datum/loadout_item/pocket_items/plush/applejack
+	name = "Plush (Applejack)"
+	item_path = /obj/item/toy/plush/pony/applejack
+
+/datum/loadout_item/pocket_items/plush/rarity
+	name = "Plush (Rarity)"
+	item_path = /obj/item/toy/plush/pony/rarity
+
+/datum/loadout_item/pocket_items/plush/lyra
+	name = "Plush (Lyra)"
+	item_path = /obj/item/toy/plush/pony/lyra
 
 /datum/loadout_item/pocket_items/dice
 	group = "Dice"

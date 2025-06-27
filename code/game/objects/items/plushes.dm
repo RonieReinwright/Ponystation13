@@ -19,7 +19,7 @@
 	var/obj/item/toy/plush/plush_child
 	var/obj/item/toy/plush/paternal_parent //who initiated creation
 	var/obj/item/toy/plush/maternal_parent //who owns, see love()
-	var/static/list/breeding_blacklist = typecacheof(/obj/item/toy/plush/carpplushie/dehy_carp) // you cannot have sexual relations with this plush
+	var/static/list/breeding_blacklist = typecacheof(list(/obj/item/toy/plush/carpplushie/dehy_carp,/obj/item/toy/plush/pony/derpy/rad)) // you cannot have sexual relations with this plush
 	var/list/scorned = list() //who the plush hates
 	var/list/scorned_by = list() //who hates the plush, to remove external references on Destroy()
 	var/heartbroken = FALSE
@@ -890,7 +890,7 @@
 
 /obj/item/toy/plush/pony
 	name = "pony plushie"
-	desc = "A squishy soft pony plushie. It has a magical aura."
+	desc = "A squishy soft pony plushie."
 	icon_state = "anon_filly_plush"
 	attack_verb_continuous = list("boops","baps")
 	attack_verb_simple = list("boop", "bap")
@@ -921,7 +921,6 @@
 	icon_state = "twilight_plush"
 
 /obj/item/toy/plush/pony/fluttershy
-	name = "fluttershy plushie"
 	desc = "A squishy soft fluttershy plushie. Kind of smells like a barn."
 	icon_state = "fluttershy_plush"
 
@@ -939,3 +938,45 @@
 	name = "Lyra plushie"
 	desc = "A squishy soft lyra plushie. It appears to be trying to sit down"
 	icon_state = "lyra_plush"
+
+/obj/item/toy/plush/pony/derpy/rad
+	name = "unreleased derpy plushie"
+	desc = "A squishy soft kind of warm derpy plushie. This one appears to be glowing slightly."
+	icon_state = "derpy_plush_rads"
+	var/cooldown = 0
+
+/obj/item/toy/plush/pony/derpy/rad/Initialize(mapload)
+	. = ..()
+	START_PROCESSING(SSobj, src)
+	AddComponent(/datum/component/irradiated)
+	radiate()
+/obj/item/toy/plush/pony/derpy/rad/Destroy()
+	. = ..()
+	STOP_PROCESSING(SSobj, src)
+	return ..()
+
+/obj/item/toy/plush/pony/derpy/rad/attack_self(mob/user)
+	. = ..()
+	radiate()
+
+/obj/item/toy/plush/pony/derpy/rad/process()
+	if(cooldown < world.time - 25)
+		cooldown = world.time
+		radiate()
+		
+/obj/item/toy/plush/pony/derpy/rad/proc/radiate()
+	radiation_pulse(
+		src,
+		max_range = 2,
+		threshold = RAD_LIGHT_INSULATION,
+		chance = URANIUM_IRRADIATION_CHANCE,
+		minimum_exposure_time = URANIUM_RADIATION_MINIMUM_EXPOSURE_TIME,
+	)
+/obj/item/toy/plush/pony/lyra/hole
+	name = "the Lyra plushie"
+	desc = "A squishy soft lyra plushie. It appears to have a hole cut in the back"
+	icon_state = "lyra_plush"
+
+/obj/item/toy/plush/pony/lyra/hole/Initialize(mapload)
+	. = ..()
+	create_storage(storage_type = /datum/storage/pockets/small/pony)
