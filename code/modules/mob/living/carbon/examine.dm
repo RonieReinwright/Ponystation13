@@ -379,6 +379,9 @@
 	//back
 	if(back && !HAS_TRAIT(back, TRAIT_EXAMINE_SKIP))
 		. += "[t_He] [t_has] [back.examine_title(user)] on [t_his] back."
+	//back alt
+	if(back_alt && !HAS_TRAIT(back_alt, TRAIT_EXAMINE_SKIP))
+		. += "[t_He] [t_has] [back_alt.examine_title(user)] on [t_his] back."
 	//Hands
 	for(var/obj/item/held_thing in held_items)
 		if((held_thing.item_flags & (ABSTRACT|HAND_ITEM)) || HAS_TRAIT(held_thing, TRAIT_EXAMINE_SKIP))
@@ -468,6 +471,8 @@
 	//back
 	if(back && !HAS_TRAIT(back, TRAIT_EXAMINE_SKIP))
 		. += "[t_He] [t_has] [back.examine_title(user)] on [t_his] back."
+	if(back_alt && !HAS_TRAIT(back_alt, TRAIT_EXAMINE_SKIP))
+		. += "[t_He] [t_has] [back_alt.examine_title(user)] on [t_his] back."
 	//ID
 	if(wear_id && !HAS_TRAIT(wear_id, TRAIT_EXAMINE_SKIP))
 		var/obj/item/card/id/id = wear_id.GetID()

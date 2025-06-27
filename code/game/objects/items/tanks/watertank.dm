@@ -8,7 +8,7 @@
 	lefthand_file = 'icons/mob/inhands/equipment/backpack_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/equipment/backpack_righthand.dmi'
 	w_class = WEIGHT_CLASS_BULKY
-	slot_flags = ITEM_SLOT_BACK
+	slot_flags = ITEM_SLOT_BACK | ITEM_SLOT_BACK_ALT
 	slowdown = 1
 	actions_types = list(/datum/action/item_action/toggle_mister)
 	max_integrity = 200
@@ -40,7 +40,7 @@
 /obj/item/watertank/proc/toggle_mister(mob/living/user)
 	if(!istype(user))
 		return
-	if(user.get_item_by_slot(user.getBackSlot()) != src)
+	if (user.get_item_by_slot(user.getBackSlot()) != src && user.get_item_by_slot(user.getBackAltSlot()) != src)
 		to_chat(user, span_warning("The watertank must be worn properly to use!"))
 		return
 	if(user.incapacitated)
@@ -74,7 +74,7 @@
 
 /obj/item/watertank/equipped(mob/user, slot)
 	..()
-	if(!(slot & ITEM_SLOT_BACK))
+	if (!(slot & ITEM_SLOT_BACK) && !(slot & ITEM_SLOT_BACK_ALT))
 		remove_noz()
 
 /obj/item/watertank/proc/remove_noz()
@@ -85,7 +85,7 @@
 		noz.forceMove(src)
 
 /obj/item/watertank/attack_hand(mob/user, list/modifiers)
-	if (user.get_item_by_slot(user.getBackSlot()) == src)
+	if (user.get_item_by_slot(user.getBackSlot()) || src && user.get_item_by_slot(user.getBackAltSlot()) == src)
 		toggle_mister(user)
 	else
 		return ..()
@@ -386,7 +386,7 @@
 	lefthand_file = 'icons/mob/inhands/equipment/backpack_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/equipment/backpack_righthand.dmi'
 	w_class = WEIGHT_CLASS_BULKY
-	slot_flags = ITEM_SLOT_BACK
+	slot_flags = ITEM_SLOT_BACK | ITEM_SLOT_BACK_ALT
 	slowdown = 1
 	actions_types = list(/datum/action/item_action/activate_injector)
 
@@ -409,7 +409,8 @@
 	var/mob/living/carbon/human/user = usr
 	if(!istype(user))
 		return
-	if (user.get_item_by_slot(ITEM_SLOT_BACK) != src)
+	if (user.get_item_by_slot(ITEM_SLOT_BACK) != src && user.get_item_by_slot(ITEM_SLOT_BACK_ALT) != src)
+
 		to_chat(user, span_warning("The chemtank needs to be on your back before you can activate it!"))
 		return
 	if(on)

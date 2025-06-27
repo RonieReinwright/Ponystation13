@@ -11,7 +11,7 @@
 	inhand_icon_state = "defibunit"
 	lefthand_file = 'icons/mob/inhands/equipment/medical_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/equipment/medical_righthand.dmi'
-	slot_flags = ITEM_SLOT_BACK
+	slot_flags = ITEM_SLOT_BACK | ITEM_SLOT_BACK_ALT
 	force = 5
 	throwforce = 6
 	w_class = WEIGHT_CLASS_BULKY
@@ -120,8 +120,8 @@
 //ATTACK HAND IGNORING PARENT RETURN VALUE
 /obj/item/defibrillator/attack_hand(mob/user, list/modifiers)
 	if(loc == user)
-		if(slot_flags & ITEM_SLOT_BACK)
-			if(user.get_item_by_slot(ITEM_SLOT_BACK) == src)
+		if(slot_flags & (ITEM_SLOT_BACK | ITEM_SLOT_BACK_ALT))
+			if(user.get_item_by_slot(ITEM_SLOT_BACK) == src || user.get_item_by_slot(ITEM_SLOT_BACK_ALT) == src)
 				ui_action_click()
 			else
 				to_chat(user, span_warning("Put the defibrillator on your back first!"))

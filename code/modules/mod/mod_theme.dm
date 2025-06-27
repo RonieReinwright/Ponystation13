@@ -20,7 +20,7 @@
 	/// Default skin of the MOD.
 	var/default_skin = "standard"
 	/// The slot this mod theme fits on
-	var/slot_flags = ITEM_SLOT_BACK
+	var/slot_flags = ITEM_SLOT_BACK | ITEM_SLOT_BACK_ALT
 	/// Armor shared across the MOD parts.
 	var/datum/armor/armor_type = /datum/armor/mod_theme
 	/// Resistance flags shared across the MOD parts.
