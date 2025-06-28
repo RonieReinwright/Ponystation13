@@ -282,7 +282,7 @@
 	crate_type = /obj/structure/closet/crate/wooden
 	discountable = SUPPLY_PACK_STD_DISCOUNTABLE
 
-	/datum/supply_pack/costumes_toys/lyraholepack
+/datum/supply_pack/costumes_toys/lyraholepack
 	name = "Lyra Heartstrings Pencil Holder 3 pack"
 	desc = "Look, I'm going to level with you we got a shipment of these plushies with no label on. \
 	We're almost certain they are some sort of pencil holders. \
@@ -294,6 +294,7 @@
 		/obj/item/toy/plush/pony/lyra/hole,
 		/obj/item/toy/plush/pony/lyra/hole
 	)
+	crate_type = /obj/structure/closet/crate/wooden
 
 /datum/supply_pack/costumes_toys/ponyplushpack
 	name = "Pony Plush mega pack"
@@ -310,4 +311,4 @@
         /obj/item/toy/plush/pony/rarity,
         /obj/item/toy/plush/pony/lyra
 	)
-
+	crate_type = /obj/structure/closet/crate/wooden

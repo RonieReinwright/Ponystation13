@@ -68,9 +68,10 @@
 	ui_icon_state = "plushie_lizard_random"
 	item_path = /obj/item/toy/plush/lizard_plushie
 
-/datum/loadout_item/pocket_items/plush/nukie
-	name = "Plush (Nukie)"
-	item_path = /obj/item/toy/plush/nukeplushie
+
+/datum/loadout_item/pocket_items/plush/moth
+	name = "Plush (Moth)"
+	item_path = /obj/item/toy/plush/moth
 
 /datum/loadout_item/pocket_items/plush/nukie
 	name = "Plush (Nukie)"
