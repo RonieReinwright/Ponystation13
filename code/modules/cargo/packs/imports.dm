@@ -358,3 +358,15 @@
 		/obj/item/stack/ore/bluespace_crystal/artificial = 2,
 		/obj/item/stock_parts/subspace/ansible,
 	)
+
+/datum/supply_pack/imports/derpy
+	name = "Unreleased Derpy Hooves plushie"
+	desc = "This is the exceptionally rare and valuable unreleased Derpy Hooves plushie. \
+	due to a storage issue The line was unfortunately cancelled However it can be yours for this affordable price. \
+	DISCLAIMER: SELLER NOT LIABLE FOR GLOWING, MUTATIONS, OR RAPID HAIR LOSS"
+	cost = CARGO_CRATE_VALUE * 30
+	contraband = TRUE
+	contains = list(
+		/obj/item/toy/plush/pony/derpy/rad
+	)
+	crate_type = /obj/structure/closet/crate/radiation
