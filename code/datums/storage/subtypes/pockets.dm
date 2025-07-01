@@ -23,6 +23,22 @@
 	max_slots = 1
 	attack_hand_interact = FALSE
 
+
+/datum/storage/pockets/small/pony
+	max_slots = 1
+	attack_hand_interact = FALSE
+
+/datum/storage/pockets/small/pony/New(
+	atom/parent,
+	max_slots,
+	max_specific_storage,
+	max_total_storage,
+)
+	. = ..()
+	set_holdable(cant_hold_list = list(
+		/obj/item/toy/plush/
+	))
+
 ///Tiny pockets
 /datum/storage/pockets/tiny
 	max_slots = 1
