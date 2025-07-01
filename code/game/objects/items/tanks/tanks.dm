@@ -20,7 +20,7 @@
 	lefthand_file = 'icons/mob/inhands/equipment/tanks_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/equipment/tanks_righthand.dmi'
 	obj_flags = CONDUCTS_ELECTRICITY
-	slot_flags = ITEM_SLOT_BACK
+	slot_flags = ITEM_SLOT_BACK | ITEM_SLOT_BACK_ALT
 	worn_icon = 'icons/mob/clothing/back.dmi' //since these can also get thrown into suit storage slots. if something goes on the belt, set this to null.
 	hitsound = 'sound/items/weapons/smash.ogg'
 	pickup_sound = 'sound/items/handling/gas_tank/gas_tank_pick_up.ogg'

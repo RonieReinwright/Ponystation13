@@ -94,6 +94,13 @@
 				continue
 		total_slot_flags |= text2num(part_slot)
 	var/list/needed_slots = required_slots.Copy()
+	if(mod?.wearer?.bodyshape & BODYSHAPE_PONY) // This seems really unclean but stopgap solution .Will be unnecessary eventually
+		for(var/part_slot in parts)
+			if(text2num(part_slot) & ITEM_SLOT_FEET)
+				var/datum/mod_part/part_datum = parts[part_slot]
+				if(!need_active || part_datum.sealed)
+					total_slot_flags |= ITEM_SLOT_GLOVES
+					break
 	for(var/needed_slot in needed_slots)
 		if(!(needed_slot & total_slot_flags))
 			break

@@ -693,6 +693,13 @@
 	race = /datum/species/jelly/slime
 	chemical_flags = REAGENT_CAN_BE_SYNTHESIZED
 
+/datum/reagent/mutationtoxin/pony
+	name = "Pony Mutation Toxin"
+	color = "#B854B4" //RGB: 184, 84, 180
+	race = /datum/species/pony
+	taste_description = "grape juice"
+	chemical_flags = REAGENT_CAN_BE_SYNTHESIZED|REAGENT_NO_RANDOM_RECIPE
+
 /datum/reagent/mutationtoxin/felinid
 	name = "Felinid Mutation Toxin"
 	color = "#5EFF3B" //RGB: 94, 255, 59
