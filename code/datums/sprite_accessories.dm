@@ -332,8 +332,8 @@ GLOBAL_LIST_EMPTY(blended_hair_icons_cache)
 /datum/sprite_accessory/hair/front_braid_pony
 	name = "Braided Front (Equestrian)"
 	icon_state = "hair_braidfront_pony"
-	hair_appendages_inner = list("hair_braidfront_a1" = HAIR_APPENDAGE_HANGING_FRONT) // ???
-	hair_appendages_outer = list("hair_braidfront_a1o" = HAIR_APPENDAGE_HANGING_FRONT) // ???
+//	hair_appendages_inner = list("hair_braidfront_a1" = HAIR_APPENDAGE_HANGING_FRONT)
+//	hair_appendages_outer = list("hair_braidfront_a1o" = HAIR_APPENDAGE_HANGING_FRONT)
 	compatible_bodyshapes = BODYSHAPE_PONY
 
 /datum/sprite_accessory/hair/not_floorlength_braid
@@ -495,7 +495,7 @@ GLOBAL_LIST_EMPTY(blended_hair_icons_cache)
 	hair_appendages_inner = list("hair_drillhairextended_a1" = HAIR_APPENDAGE_HANGING_FRONT)
 	hair_appendages_outer = list("hair_drillhairextended_a1o" = HAIR_APPENDAGE_HANGING_FRONT)
 
-/datum/sprite_accessory/hair/eighties_pony // doesn't look like short hair to me, so I'm putting it here
+/datum/sprite_accessory/hair/eighties_pony // doesn't look like short hair to me, so I'm putting it here instead of together with "hair/shorthaireighties"
 	name = "Hair 80s (Equestrian)"
 	icon_state = "hair_80s_pony"
 	compatible_bodyshapes = BODYSHAPE_PONY
@@ -676,7 +676,7 @@ GLOBAL_LIST_EMPTY(blended_hair_icons_cache)
 /datum/sprite_accessory/hair/long2_pony
 	name = "Long Hair 2 (Equestrian)"
 	icon_state = "hair_long2_pony"
-	hair_appendages_inner = list("hair_long2_a1" = HAIR_APPENDAGE_HANGING_REAR) // ???
+//	hair_appendages_inner = list("hair_long2_a1" = HAIR_APPENDAGE_HANGING_REAR)
 	compatible_bodyshapes = BODYSHAPE_PONY
 
 /datum/sprite_accessory/hair/long3
@@ -688,7 +688,7 @@ GLOBAL_LIST_EMPTY(blended_hair_icons_cache)
 	name = "Long Hair 3 (Equestrian)"
 	icon_state = "hair_long3_pony"
 	compatible_bodyshapes = BODYSHAPE_PONY
-	hair_appendages_inner = list("hair_long3_a1" = HAIR_APPENDAGE_HANGING_REAR) // ???
+//	hair_appendages_inner = list("hair_long3_a1" = HAIR_APPENDAGE_HANGING_REAR)
 
 /datum/sprite_accessory/hair/long_over_eye
 	name = "Long Over Eye"
@@ -725,8 +725,8 @@ GLOBAL_LIST_EMPTY(blended_hair_icons_cache)
 /datum/sprite_accessory/hair/sidepartlongalt_pony
 	name = "Long Side Part (Equestrian)"
 	icon_state = "hair_longsidepart_pony"
-	hair_appendages_inner = list("hair_longsidepart_a1" = HAIR_APPENDAGE_HANGING_FRONT) // ???
-	hair_appendages_outer = list("hair_longsidepart_a1o" = HAIR_APPENDAGE_HANGING_FRONT) // ???
+//	hair_appendages_inner = list("hair_longsidepart_a1" = HAIR_APPENDAGE_HANGING_FRONT)
+//	hair_appendages_outer = list("hair_longsidepart_a1o" = HAIR_APPENDAGE_HANGING_FRONT)
 	compatible_bodyshapes = BODYSHAPE_PONY
 
 /datum/sprite_accessory/hair/megaeyebrows
@@ -877,8 +877,8 @@ GLOBAL_LIST_EMPTY(blended_hair_icons_cache)
 /datum/sprite_accessory/hair/ponytail4_pony
 	name = "Ponytail 4 (Equestrian)"
 	icon_state = "hair_ponytail4_pony"
-	hair_appendages_inner = list("hair_ponytail4_a1" = HAIR_APPENDAGE_REAR) // ???????
-	hair_appendages_outer = list("hair_ponytail4_a1o" = HAIR_APPENDAGE_REAR) // ???????
+//	hair_appendages_inner = list("hair_ponytail4_a1" = HAIR_APPENDAGE_REAR)
+//	hair_appendages_outer = list("hair_ponytail4_a1o" = HAIR_APPENDAGE_REAR)
 	compatible_bodyshapes = BODYSHAPE_PONY
 
 /datum/sprite_accessory/hair/ponytail5
@@ -890,8 +890,8 @@ GLOBAL_LIST_EMPTY(blended_hair_icons_cache)
 /datum/sprite_accessory/hair/ponytail5_pony
 	name = "Ponytail 5 (Equestrian)"
 	icon_state = "hair_ponytail5_pony"
-	hair_appendages_inner = list("hair_ponytail5_a1" = HAIR_APPENDAGE_HANGING_FRONT) // ???????
-	hair_appendages_outer = list("hair_ponytail5_a1o" = HAIR_APPENDAGE_HANGING_FRONT) // ???????
+//	hair_appendages_inner = list("hair_ponytail5_a1" = HAIR_APPENDAGE_HANGING_FRONT)
+//	hair_appendages_outer = list("hair_ponytail5_a1o" = HAIR_APPENDAGE_HANGING_FRONT)
 	compatible_bodyshapes = BODYSHAPE_PONY
 
 /datum/sprite_accessory/hair/ponytail6
@@ -903,8 +903,8 @@ GLOBAL_LIST_EMPTY(blended_hair_icons_cache)
 /datum/sprite_accessory/hair/ponytail6_pony
 	name = "Ponytail 6 (Equestrian)"
 	icon_state = "hair_ponytail6_pony"
-	hair_appendages_inner = list("hair_ponytail6_a1" = HAIR_APPENDAGE_REAR) // ???????
-	hair_appendages_outer = list("hair_ponytail6_a1o" = HAIR_APPENDAGE_REAR) // ???????
+//	hair_appendages_inner = list("hair_ponytail6_a1" = HAIR_APPENDAGE_REAR)
+//	hair_appendages_outer = list("hair_ponytail6_a1o" = HAIR_APPENDAGE_REAR)
 	compatible_bodyshapes = BODYSHAPE_PONY
 
 /datum/sprite_accessory/hair/ponytail7
@@ -940,8 +940,8 @@ GLOBAL_LIST_EMPTY(blended_hair_icons_cache)
 /datum/sprite_accessory/hair/countryponytail_pony
 	name = "Ponytail (Country, Equestrian)"
 	icon_state = "hair_country_pony"
-	hair_appendages_inner = list("hair_country_a1" = HAIR_APPENDAGE_HANGING_FRONT) // ???
-	hair_appendages_outer = list("hair_country_a1o" = HAIR_APPENDAGE_HANGING_FRONT) // ???
+//	hair_appendages_inner = list("hair_country_a1" = HAIR_APPENDAGE_HANGING_FRONT)
+//	hair_appendages_outer = list("hair_country_a1o" = HAIR_APPENDAGE_HANGING_FRONT)
 	compatible_bodyshapes = BODYSHAPE_PONY
 
 /datum/sprite_accessory/hair/fringetail
@@ -971,8 +971,8 @@ GLOBAL_LIST_EMPTY(blended_hair_icons_cache)
 /datum/sprite_accessory/hair/sidetail4_pony
 	name = "Ponytail (Side) 4 (Equestrian)"
 	icon_state = "hair_sidetail4_pony"
-	hair_appendages_inner = list("hair_sidetail4_a1" = HAIR_APPENDAGE_HANGING_FRONT) // ???????
-	hair_appendages_outer = list("hair_sidetail4_a1o" = HAIR_APPENDAGE_HANGING_FRONT) // ???????
+//	hair_appendages_inner = list("hair_sidetail4_a1" = HAIR_APPENDAGE_HANGING_FRONT)
+//	hair_appendages_outer = list("hair_sidetail4_a1o" = HAIR_APPENDAGE_HANGING_FRONT)
 	compatible_bodyshapes = BODYSHAPE_PONY
 
 /datum/sprite_accessory/hair/spikyponytail
@@ -984,8 +984,8 @@ GLOBAL_LIST_EMPTY(blended_hair_icons_cache)
 /datum/sprite_accessory/hair/spikyponytail_pony
 	name = "Ponytail (Spiky, Equestrian)"
 	icon_state = "hair_spikyponytail_pony"
-	hair_appendages_inner = list("hair_spikyponytail_a1" = HAIR_APPENDAGE_REAR) // ???
-	hair_appendages_outer = list("hair_spikyponytail_a1o" = HAIR_APPENDAGE_REAR) // ???
+//	hair_appendages_inner = list("hair_spikyponytail_a1" = HAIR_APPENDAGE_REAR)
+//	hair_appendages_outer = list("hair_spikyponytail_a1o" = HAIR_APPENDAGE_REAR)
 	compatible_bodyshapes = BODYSHAPE_PONY
 
 /datum/sprite_accessory/hair/poofy
@@ -1153,8 +1153,8 @@ GLOBAL_LIST_EMPTY(blended_hair_icons_cache)
 /datum/sprite_accessory/hair/tressshoulder_pony
 	name = "Tress Shoulder (Equestrian)"
 	icon_state = "hair_tressshoulder_pony"
-	hair_appendages_inner = list("hair_tressshoulder_a1" = HAIR_APPENDAGE_HANGING_FRONT) // ???
-	hair_appendages_outer = list("hair_tressshoulder_a1o" = HAIR_APPENDAGE_HANGING_FRONT) // ???
+//	hair_appendages_inner = list("hair_tressshoulder_a1" = HAIR_APPENDAGE_HANGING_FRONT)
+//	hair_appendages_outer = list("hair_tressshoulder_a1o" = HAIR_APPENDAGE_HANGING_FRONT)
 	compatible_bodyshapes = BODYSHAPE_PONY
 
 /datum/sprite_accessory/hair/trimmed
@@ -1253,6 +1253,8 @@ GLOBAL_LIST_EMPTY(blended_hair_icons_cache)
 /datum/sprite_accessory/hair/wisp_pony
 	name = "Wisp (Equestrian)"
 	icon_state = "hair_wisp_pony"
+//	hair_appendages_inner = list("hair_wisp_a1" = HAIR_APPENDAGE_REAR)
+//	hair_appendages_outer = list("hair_wisp_a1o" = HAIR_APPENDAGE_REAR)
 	compatible_bodyshapes = BODYSHAPE_PONY
 
 /datum/sprite_accessory/hair/ziegler
@@ -1264,6 +1266,8 @@ GLOBAL_LIST_EMPTY(blended_hair_icons_cache)
 /datum/sprite_accessory/hair/ziegler_pony
 	name = "Ziegler (Equestrian)"
 	icon_state = "hair_ziegler_pony"
+//	hair_appendages_inner = list("hair_ziegler_a1" = HAIR_APPENDAGE_REAR)
+//	hair_appendages_outer = list("hair_ziegler_a1o" = HAIR_APPENDAGE_REAR)
 	compatible_bodyshapes = BODYSHAPE_PONY
 
 /*
