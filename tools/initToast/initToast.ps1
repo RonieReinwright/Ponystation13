@@ -13,16 +13,17 @@ $notifier = [Windows.UI.Notifications.ToastNotificationManager]::CreateToastNoti
 [Windows.Data.Xml.Dom.XmlDocument, Windows.Data.Xml.Dom, ContentType = WindowsRuntime] > $null
 $xml = New-Object Windows.Data.Xml.Dom.XmlDocument
 
+Start-Process "byond://127.0.0.1:$port"
+
 $xml.LoadXml(@"
 <toast>
 	<visual>
 		<binding template="ToastGeneric">
-			<text>Initialization Complete</text>
+			$(if ($icon) { "<image placement='appLogoOverride' src='$icon'/>" })
+			<text>Dream Seeker Launched</text>
+			<text>Connected to $name on byond://127.0.0.1:$port</text>
 		</binding>
 	</visual>
-	<actions>
-		<action content="Launch Dream Seeker" activationType="protocol" arguments="byond://127.0.0.1:$port"/>
-	</actions>
 </toast>
 "@)
 
